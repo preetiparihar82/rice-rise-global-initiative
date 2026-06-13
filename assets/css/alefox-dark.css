@@ -1,0 +1,78 @@
+body,
+.client-carousel__tilte span,
+.main-header,
+.service-one__item,
+body.boxed-wrapper .page-wrapper {
+  background-color: var(--alefox-black2);
+}
+
+.client-carousel .client-carousel__one .client-carousel__one__item:hover,
+.why-choose-one,
+.offer-one__inner,
+.main-slider-one__item,
+.about-one::after,
+.service-one,
+.team-card__content,
+.product__item__content,
+.category-one__item,
+.topbar-one,
+.blog-card__content {
+  background-color: var(--alefox-black3);
+}
+
+.product__item__title,
+.service-one__bottom__list li i,
+.category-one__item__text,
+.main-slider-one__sub-title,
+.alefox-btn,
+.alefox-btn:hover,
+.main-menu .main-menu__list > li > a,
+.main-header__cart,
+.main-header__search,
+.main-header__call__text,
+.topbar-one__social a,
+.client-carousel__tilte,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--alefox-white);
+}
+
+.service-one__item__link,
+.main-header__call__title,
+.blog-card__meta li,
+.blog-card__link,
+body {
+  color: var(--alefox-text-dark);
+}
+
+.service-one__item__text,
+.offer-two__item__border,
+.topbar-one__language,
+.client-carousel__tilte {
+  border-color: rgba(var(--alefox-white-rgb), 0.2);
+}
+
+.main-header__right__border {
+  background-color: rgba(var(--alefox-white-rgb), 0.2);
+}
+
+.home-showcase__inner,
+.main-menu .main-menu__list li ul {
+  background-color: var(--alefox-black2);
+}
+
+.main-header--four .main-menu .main-menu__list > li > a,
+.main-menu .main-menu__list li ul li > a {
+  color: var(--alefox-text-dark);
+}
+
+.main-menu .main-menu__list li ul li.current > a,
+.main-menu .main-menu__list li ul li:hover > a {
+  background-color: var(--alefox-black3);
+  color: var(--alefox-text-dark);
+}
+/*# sourceMappingURL=alefox-dark.css.map */

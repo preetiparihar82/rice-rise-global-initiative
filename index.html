@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rice-Rise Global Initiative</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description"
+        content="RRGI CropScience Private Limited is a climate-smart agriculture company promoting sustainable rice farming through technologies like M-DSR, AWD irrigation, drone monitoring, soil testing, and carbon credit monetization in Odisha and West Bengal.">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/alefox-icons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/alefox.css?v=36579.255" />
+    <style>
+/* =========================================
+   PROJECT LANDSCAPE UNIFORMITY
+   ========================================= */
+.a3{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 85px;     
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+.project-two__item img, 
+.project-two__item .project-video-fixed {
+    width: 100%;
+    height: 350px !important; 
+    object-fit: cover;        
+    display: block;
+    transition: all 0.5s ease;
+}
+
+
+.project-two__item:hover img,
+.project-two__item:hover .project-video-fixed {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.project-two__item__content {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+/* --- THE OVERLAY HEIGHT FIX --- */
+
+
+.project-two__item__content::after {
+    top: auto !important;     
+    bottom: 0 !important;     
+}
+
+.project-two__item:hover .project-two__item__content::after {
+    height: 35% !important;  
+}
+/* =========================================
+   1. DESKTOP TESTIMONIAL STYLES
+   ========================================= */
+.testimonial-media-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+.testimonial-media-box img,
+.testimonial-media-box video {
+    width: 100%;
+    height: 600px;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonials-two__item {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* =========================================
+   2. INVISIBLE SLIDER CLICK ZONES
+   ========================================= */
+.testimonials-two__carousel {
+    position: relative;
+}
+
+.testimonials-two__carousel .slick-arrow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    z-index: 99;
+    background: transparent;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.testimonials-two__carousel .slick-prev { left: 0; }
+.testimonials-two__carousel .slick-next { right: 0; }
+
+/* =========================================
+   3. STRICT MOBILE OVERRIDES
+   ========================================= */
+@media (max-width: 767.98px) {
+    
+    .testimonials-two__carousel .testimonial-media-box {
+        box-shadow: none !important;
+        border: none !important;
+        height: auto !important;
+    }
+
+    .testimonials-two__carousel .testimonial-media-box img,
+    .testimonials-two__carousel .testimonial-media-box video {
+        height: auto !important; 
+        max-height: 80vh !important; 
+      
+        object-fit: contain !important; 
+        background-color: transparent !important; 
+    }
+}
+/* =========================================
+   FORCE 5-COLUMN GRID (20% WIDTH)
+   ========================================= */
+
+@media (min-width: 992px) {
+    .col-lg-20 {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+}
+    </style>
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <div class="topbar-two">
+            <div class="container">
+                <div class="topbar-two__inner">
+                    Empower. Cultivate. Conserve.
+                </div><!-- /.topbar-two__inner -->
+            </div><!-- /.container -->
+        </div><!-- /.topbar-two -->
+        <header class="main-header main-header--three sticky-header sticky-header--one-page">
+            <div class="main-header__inner">
+                <div class="main-header__logo">
+                    <!-- <a href="index.html">
+                        <img src="assets/images/logo-light.png" alt="Alefox HTML" width="147">
+                    </a> -->
+                    <a href="index.html" class="a3">
+    <img src="./assets/images/ricerise_img.png" alt="Rice-Rise Global Initiative Logo" class="logo-img">
+</a>
+                </div><!-- /.main-header__logo -->
+                <nav class="main-header__nav main-menu">
+                    <ul class="main-menu__list one-page-scroll-menu">
+                        <li class="scrollToLink current"><a href="#home">Home</a></li>
+                        <li class="scrollToLink"><a href="#about">About</a></li>
+                        <li class="scrollToLink"><a href="#services">Services</a></li>
+                        <li class="scrollToLink"><a href="#project">Project</a></li>
+                        <li class="scrollToLink"><a href="#testimonials">Testimonials</a></li>
+                        <li class="scrollToLink"><a href="#Contact">Contact Us</a></li>
+                    </ul>
+                </nav><!-- /.main-header__nav -->
+                <div class="main-header__right">
+                    <div class="mobile-nav__btn mobile-nav__toggler">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- /.mobile-nav__toggler -->
+                    <a href="#" class="search-toggler main-header__search d-none">
+                        <i class="icon-magnifying-glass" aria-hidden="true"></i>
+                        <span class="sr-only">Search</span>
+                    </a><!-- /.search-toggler -->
+                    <a href="cart.html" class="main-header__cart d-none">
+                        <i class="icon-shopping-cart" aria-hidden="true"></i>
+                        <span class="main-header__cart__count">02</span>
+                        <span class="sr-only">Search</span>
+                    </a><!-- /.search-toggler -->
+                </div><!-- /.main-header__right -->
+            </div><!-- /.main-header__inner -->
+        </header><!-- /.main-header -->
+
+        <!-- main-slider-start -->
+        <section class="main-slider-three" id="home">
+            <div class="main-slider-three__carousel alefox-owl__carousel owl-carousel" data-owl-options='{
+		"loop": true,
+		"animateOut": "fadeOut",
+		"animateIn": "fadeIn",
+		"items": 1,
+		"autoplay": true,
+		"autoplayTimeout": 7000,
+		"smartSpeed": 1000,
+		"nav": false,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+		"dots": true,
+		"margin": 0
+	    }'>
+                <div class="item">
+                    <div class="main-slider-three__item">
+                        <div class="main-slider-three__bg" style="background-image: url(assets/images/Herobg1.jpeg);">
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                        </div>
+                        <div class="main-slider-three__shape-one">
+                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="alefox">
+                        </div>
+                        <div class="main-slider-three__shape-two">
+                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="alefox">
+                        </div>
+                        <div class="container">
+                            <div class="main-slider-three__content text-center">
+                                <h5 class="main-slider-three__sub-title">Empowering Farmers with Smart Rice Farming</h5>
+                                <!-- slider-sub-title -->
+                                <h2 class="main-slider-three__title">
+                                    Revolutionizing Agriculture with <br> M-DSR & AWD Practices<span>y</span>
+                                </h2><!-- slider-title -->
+                                <div class="main-slider-three__text">
+                                    <p class="main-slider-three__text__one">
+                                        Boosting yields while saving water and reducing emissions through smart rice
+                                        farming techniques.
+                                    </p>
+                                </div><!-- slider-text -->
+                                <div class="main-slider-three__btn">
+                                    <a href="#services" class="alefox-btn">
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        Discover More
+                                    </a><!-- slider-btn -->
+                                    <div class="main-slider-three__btn__two">
+                                        <a href="#Contact" class="alefox-btn">
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            Contact Now
+                                        </a><!-- slider-btn -->
+                                    </div>
+                                </div><!-- slider-btn -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="main-slider-three__item">
+                        <div class="main-slider-three__bg" style="background-image: url(assets/images/Herobg2.png);">
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                        </div>
+                        <div class="main-slider-three__shape-one">
+                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="alefox">
+                        </div>
+                        <div class="main-slider-three__shape-two">
+                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="alefox">
+                        </div>
+                        <div class="container">
+                            <div class="main-slider-three__content text-center">
+                                <h5 class="main-slider-three__sub-title">Technology Meets Tradition</h5>
+                                <!-- slider-sub-title -->
+                                <h2 class="main-slider-three__title">
+                                    Agri-Tech, Drones & Data for <br> the Next-Gen Farmer<span>y</span>
+                                </h2><!-- slider-title -->
+                                <div class="main-slider-three__text">
+                                    <p class="main-slider-three__text__one">
+                                        ransforming farms with drones, data analytics, and real-time agri-tech
+                                        solutions.
+                                    </p>
+                                </div><!-- slider-text -->
+                                <div class="main-slider-three__btn">
+                                    <a href="#services" class="alefox-btn">
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        Discover More
+                                    </a><!-- slider-btn -->
+                                    <div class="main-slider-three__btn__two">
+                                        <a href="#Contact" class="alefox-btn">
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            Contact Now
+                                        </a><!-- slider-btn -->
+                                    </div>
+                                </div><!-- slider-btn -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="main-slider-three__item">
+                        <div class="main-slider-three__bg" style="background-image: url(assets/images/Herobg3.JPG);">
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                            <div class="main-slider-three__bg__color"></div>
+                        </div>
+                        <div class="main-slider-three__shape-one">
+                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="alefox">
+                        </div>
+                        <div class="main-slider-three__shape-two">
+                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="alefox">
+                        </div>
+                        <div class="container">
+                            <div class="main-slider-three__content text-center">
+                                <h5 class="main-slider-three__sub-title">Farming that Rewards and Sustains</h5>
+                                <!-- slider-sub-title -->
+                                <h2 class="main-slider-three__title">
+                                    Carbon Credits, Soil Health <br> & Farmer Support<span>y</span>
+                                </h2><!-- slider-title -->
+                                <div class="main-slider-three__text">
+                                    <p class="main-slider-three__text__one">
+                                        Enabling sustainable farming with carbon incentives, soil care, and expert field
+                                        support.
+                                    </p>
+                                </div><!-- slider-text -->
+                                <div class="main-slider-three__btn">
+                                    <a href="#services" class="alefox-btn">
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        Discover More
+                                    </a><!-- slider-btn -->
+                                    <div class="main-slider-three__btn__two">
+                                        <a href="#Contact" class="alefox-btn">
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            <span class="alefox-btn__item"></span>
+                                            Contact Now
+                                        </a><!-- slider-btn -->
+                                    </div>
+                                </div><!-- slider-btn -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main-slider-end -->
+
+        <section class="feature-two">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                        <div class="feature-two__item text-center">
+                            <div class="feature-two__item__icon-bg"><span class="icon-fertilizer"></span></div>
+                            <div class="feature-two__item__shape"
+                                style="background-image: url(assets/images/shapes/feature-2-shape.png);"></div>
+                            <div class="feature-two__item__icon"><span class="icon-fertilizer"></span></div>
+                            <h3 class="feature-two__item__title">Climate Resilience</h3>
+                            <p class="feature-two__item__text">
+                                Promotes sustainable rice farming that reduces methane emissions and conserves
+                                groundwater.
+                            </p>
+                        </div><!-- item -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="feature-two__item text-center">
+                            <div class="feature-two__item__icon-bg"><span class="icon-salad"></span></div>
+                            <div class="feature-two__item__shape"
+                                style="background-image: url(assets/images/shapes/feature-2-shape.png);"></div>
+                            <div class="feature-two__item__icon"><span class="icon-salad"></span></div>
+                            <h3 class="feature-two__item__title">Farmer Empowerment</h3>
+                            <p class="feature-two__item__text">
+                                Provides training, incentives, and field support to uplift underprivileged farming
+                                communities.
+                            </p>
+                        </div><!-- item -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="feature-two__item text-center">
+                            <div class="feature-two__item__icon-bg"><span class="icon-vegetable"></span></div>
+                            <div class="feature-two__item__shape"
+                                style="background-image: url(assets/images/shapes/feature-2-shape.png);"></div>
+                            <div class="feature-two__item__icon"><span class="icon-vegetable"></span></div>
+                            <h3 class="feature-two__item__title">Tech-Driven Innovation</h3>
+                            <p class="feature-two__item__text">
+                                Integrates drones, data, and agri-tech tools for smarter, more productive farming
+                                decisions.
+                            </p>
+                        </div><!-- item -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-three" id="about">
+            <div class="about-three__shape" style="background-image: url(assets/images/riceaboutus_img.png);">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                       <div class="col-lg-6">
+    <div class="about-three__image wow fadeInLeft" data-wow-delay="200ms">
+        <video autoplay loop muted playsinline style="height: 600px; width: 500px; object-fit: cover; border-radius: inherit;">
+            <source src="assets/images/testivid2.mp4" type="video/mp4">
+        </video>
+    </div></div><!-- /.about-three__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+                        <div class="about-three__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline bw-split-in-right"><span
+                                        class="sec-title__tagline__left-leaf"
+                                        style="background-image: url(assets/images/shapes/leaf.png);"></span>Our About
+                                    Us<span class="sec-title__tagline__right-leaf"
+                                        style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                                <!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title bw-split-in-left">Climate-Smart Farming for a Sustainable
+                                    Tomorrow</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <p class="about-three__content__text">
+                                RRGI empowers farmers with eco-friendly rice cultivation methods like AWD and
+                                DSR, combining technology and training to boost productivity while preserving natural
+                                resources.
+                            </p>
+                            <div class="about-three__content__quote">
+                                <i class="icon-farmer-two"></i>
+                                The future of farming lies in the hands of those who grow with nature, not against it.
+                            </div>
+                            <div class="about-three__content__border"></div>
+                            <ul class="about-three__content__list">
+                                <li><span class="icon-check-mark"></span>Water-Efficient Irrigation</li>
+                                <li><span class="icon-check-mark"></span>Tech-Enabled Crop Monitoring</li>
+                                <li><span class="icon-check-mark"></span>Farmer-Centric Training & Support</li>
+                            </ul>
+                            <!-- <a href="#Contact" class="alefox-btn">
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                About More
+                            </a> -->
+                            <!-- We wrap both buttons in a flex container so they sit side-by-side with a nice gap -->
+<div class="d-flex flex-wrap gap-5">
+    
+    <!-- Your Original Button -->
+    <a href="#Contact" class="alefox-btn">
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        About More
+    </a>
+
+    <!-- Your New PDF Button -->
+    <!-- CHANGE the href link to where your actual PDF is saved -->
+    <a href="/RRGI_profile.pdf" target="_blank" download class="alefox-btn">
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        <span class="alefox-btn__item"></span>
+        Project Overview
+    </a>
+
+</div>
+                        </div><!-- /.why-choose-two__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.about-three -->
+
+        <section class="circle-mv-section">
+            <div class="mv-header">
+                <h2>Mission & Vision</h2>
+                <p>Our path to sustainable, tech-driven agriculture</p>
+            </div>
+            <div class="circle-layout">
+                <div class="mv-card mission">
+                    <div class="mv-circle">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To bridge international AgTech innovation with local farming communities by deploying Alternate Wetting and Drying (AWD)methodologies, securing fair carbon/climate financing, and establishing transparent, verified digital agricultural tracking frameworks on Philippine soil.
+                    </p>
+                </div>
+                <div class="connector-line"></div>
+                <div class="mv-card vision">
+                    <div class="mv-circle">🌾</div>
+                    <h3>Our Vision</h3>
+                    <p>
+                         To be the leading catalyst for climate-resilient rice farming systems in Southeast Asia, where data-driven technology and sustainable practices empower smallholder farmers, eliminate ecological poverty, and secure global food abundance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       <section class="funfact-one mt-5">
+    <div class="container">
+        <ul class="list-unstyled funfact-one__list ebal-two-item-fact">
+            <li>
+                <div class="funfact-one__list__icon"><span class="icon-management"></span></div>
+                <div class="funfact-one__list__content">
+                    <h5 class="funfact-one__list__number count-box">
+                        <span class="count-text" data-stop="2000" data-speed="1500"></span>+
+                    </h5>
+                    <p class="funfact-one__list__text">Total Hectare</p>
+                </div>
+            </li>
+            <li>
+                <div class="funfact-one__list__icon"><span class="icon-sustainability"></span></div>
+                <div class="funfact-one__list__content">
+                    <h5 class="funfact-one__list__number count-box">
+                        <span class="count-text" data-stop="5000" data-speed="1500"></span>+
+                    </h5>
+                    <p class="funfact-one__list__text">Total Farmers</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section><!-- /.funfact-one -->
+
+        <!-- Service Start -->
+        <section class="service-three" id="services">
+            <div class="service-three__bg" style="background-image: url(assets/images/shapes/service-bg-3-shape.png);">
+            </div>
+            <div class="service-three__shape"
+                style="background-image: url(assets/images/riceservice2.png);"></div>
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>Our Best Services<span
+                            class="sec-title__tagline__right-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                    <!-- /.sec-title__tagline -->
+
+                    <!-- <h3 class="sec-title__title bw-split-in-left">Complete Agro-Ecosystem for Productivity and Sustainability</h3>< -->
+                    <h3 class="sec-title__title">Complete Agro-Ecosystem for Productivity and Sustainability</h3>
+                    <!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="service-three__carousel alefox-owl__carousel alefox-owl__carousel--with-shadow alefox-owl__carousel--basic-nav owl-carousel owl-theme"
+    data-owl-options='{
+        "items": 1,
+        "margin": 30,
+        "loop": true,
+        "smartSpeed": 700,
+        "nav": false,
+        "navText": ["<span class=\"icofont-bubble-left\"></span>","<span class=\"icofont-bubble-righ\"></span>"],
+        "dots": true,
+        "autoplay": true,
+        "autoplayTimeout": 3000,
+        "autoplayHoverPause": true,
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 2
+            },
+            "992": {
+                "items": 3
+            }
+        }
+    }'>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="00ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/MechanisedDirectSeeded.jpeg" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-salad"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Mechanized Direct-Seeded Rice (M-DSR)</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Boosts efficiency and saves water by replacing traditional transplanting with direct
+                                    machine seeding.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/AWDIrrigation.jpeg" alt="alefox">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-management"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Alternate Wetting & Drying (AWD) Irrigation</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    A smart water-saving technique that reduces methane emissions in rice fields.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="200ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/AgriTech Integration.png" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-agronomy"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Agri-Tech Integration</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Combines modern technology with traditional farming for better crop outcomes,
+                                    efficiency, sustainability, and precision.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="00ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/droneofficer.png" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-salad"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Drone-Based Crop Protection & Monitoring</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Enables precise pesticide spraying and real-time crop health tracking via drones.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/carbonfarmer.jpeg" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-management"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Carbon Credit Monetization</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Rewards farmers for sustainable practices by converting emission reductions into
+                                    carbon credits, income, recognition, and climate impact.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="200ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/soiltesting.jpeg" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-agronomy"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Soil Testing & Nutrient Management</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Improves yield with tailored nutrient plans based on scientific soil analysis,
+                                    precision, sustainability, and crop health.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="00ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/fieldofficier.png" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-salad"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Field Officer Training & Support</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Equips on-ground staff with skills and tools to guide farmers effectively through
+                                    training and field expertise.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+                    <div class="item">
+                        <div class="service-three__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-three__item__image">
+                                <img src="assets/images/datadriven.png" alt="alefox" style="height: 278px;">
+                            </div>
+                            <div class="service-three__item__content">
+                                <div class="service-three__item__icon">
+                                    <span class="icon-management"></span>
+                                </div><!-- /.service-icon -->
+                                <h3 class="service-three__item__title">
+                                    <a href="#">Data-Driven Farming Decisions</a>
+                                </h3><!-- /.service-title -->
+                                <p class="service-three__item__text">
+                                    Empowers farmers with analytics and insights to make informed crop management
+                                    choices.
+                                </p><!-- /.service-text -->
+                                <a href="#Contact" class="service-three__item__link">
+                                    <i class="icofont-arrow-up"></i>
+                                </a>
+                            </div>
+                            <div class="service-three__item__shape"
+                                style="background-image: url(assets/images/shapes/service-3-shape.png);"></div>
+                        </div><!-- /.service-item -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+
+        <!-- <div class="client-carousel client-carousel--two @@extraClassName">
+            <div class="container">
+                <div class="client-carousel__one alefox-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop":true,
+            "autoplay": 6000,
+            "nav":false,
+            "dots":false,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive":{
+                "0":{
+                    "items":1,
+                    "margin": 0
+                },
+                "360":{
+                    "items":2,
+                    "margin": 0
+                },
+                "575":{
+                    "items":3,
+                    "margin": 30
+                },
+                "768":{
+                    "items":3,
+                    "margin": 40
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 40
+                },
+                "1200":{
+                    "items": 5
+                }
+            }
+            }'>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div><!-- /.owl-slide-item-->
+                    <!-- <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/brand/brand-1-1.png" alt="alefox">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- /.client-carousel -->
+
+        <section class="cta-five">
+            <div class="container">
+                <div class="cta-five__wrapper">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center wow fadeInLeft" data-wow-delay="100ms">
+                            <div class="cta-five__content">
+                                <div class="sec-title text-left">
+
+                                    <h6 class="sec-title__tagline bw-split-in-right"><span
+                                            class="sec-title__tagline__left-leaf"
+                                            style="background-image: url(assets/images/shapes/leaf.png);"></span>Smart
+                                        Solutions for Sustainable Rice Farming<span
+                                            class="sec-title__tagline__right-leaf"
+                                            style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                                    <!-- /.sec-title__tagline -->
+
+                                    <h3 class="sec-title__title">Innovating Agriculture Through Technology, Training &
+                                        Climate-Resilient Practices</h3><!-- /.sec-title__title -->
+                                </div><!-- /.sec-title -->
+                                <ul class="cta-five__content__list">
+                                    <li><i class="icofont-pumpkin"></i>
+                                        <h3 class="cta-five__content__list__title">Seeding</h3><span>Faster, uniform,
+                                            water-saving rice planting.</span>
+                                    </li>
+                                    <li><i class="icofont-artichoke"></i>
+                                        <h3 class="cta-five__content__list__title">Irrigation</h3><span>Controlled water
+                                            use, reduced methane.</span>
+                                    </li>
+                                    <li><i class="icofont-onion"></i>
+                                        <h3 class="cta-five__content__list__title">Technology</h3><span>Drones, data,
+                                            precision-driven decisions.</span>
+                                    </li>
+                                    <li><i class="icofont-tomato"></i>
+                                        <h3 class="cta-five__content__list__title">Support</h3><span>Training, soil
+                                            care, carbon income.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-end wow fadeInRight" data-wow-delay="200ms">
+                            <div class="cta-five__image">
+                                <img src="assets/images/SmartSolutionsricefarming.png" alt="alefox"
+                                    style="height: 530px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.cta-five -->
+
+        <section class="cta-four">
+            <div class="cta-four__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%"
+                style="background-image: url(assets/images/EndtoEndClimate.png);"></div>
+            <!-- /.cta-four__bg -->
+            <div class="container wow fadeInUp">
+                <h5 class="cta-four__sub-title">Sustainable Farming. Smarter Tools. Stronger Farmers.</h5>
+                <!-- <h2 class="cta-four__title">We Food Leader <span>40%</span> Off Time<br> Agriculture Market</h2> -->
+                <h2 class="cta-four__title">End-to-End Climate-Smart Solutions for <br> Rice Agriculture</h2>
+                <p class="text-white a1">RRGI empowers underprivileged farmers with advanced practices like
+                    M-DSR, AWD, agri-tech integration, drone crop care, carbon credit access, soil testing, field
+                    support, and data-driven decisions—boosting productivity while preserving the planet.</p>
+                <!-- <ul class="countdown-one__list cta-four__countdown list-unstyled" data-leading-zeros="true" data-enable-days="true" data-deadline-date="dynamicDate"></ul> -->
+                <!-- /.countdown-one__list list-unstyled -->
+                <a href="#services" class="alefox-btn mt-2">
+                    <span class="alefox-btn__item"></span>
+                    <span class="alefox-btn__item"></span>
+                    <span class="alefox-btn__item"></span>
+                    <span class="alefox-btn__item"></span>
+                    Discover More
+                </a>
+            </div>
+        </section>
+
+        <section class="project-two" id="project">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>Our Projects<span
+                            class="sec-title__tagline__right-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                    <!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Explore This Projects</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="project-two__carousel alefox-owl__carousel alefox-owl__carousel--with-shadow alefox-owl__carousel--basic-nav owl-carousel owl-theme"
+                    data-owl-options='{
+        "items": 1,
+        "margin": 30,
+        "loop": true, 
+        "smartSpeed": 700,
+        "nav": false,
+        "navText": ["<span class=\"icofont-bubble-left\"></span>","<span class=\"icofont-bubble-righ\"></span>"],
+        "dots": true,
+        "autoplay": true,
+        "autoplayTimeout": 3000,
+        "autoplayHoverPause": true,
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 2
+            },
+            "1024": {
+                "items": 3
+            },
+            "1400": {
+                "items": 4
+            }
+        }
+    }'>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject1.jpg" alt="alefox">
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Gardening</p> -->
+                                <h5 class="project-two__item__title"><a href="#">Transplantation</a></h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.item -->
+                 <div class="item">
+    <div class="project-two__item">
+        <video autoplay loop muted playsinline class="project-video-fixed">
+            <source src="assets/images/testivid1.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video>
+        
+        <div class="project-two__item__content">
+            <!-- <p class="project-two__item__cats">f</p>  -->
+            
+            <h5 class="project-two__item__title">
+                <a href="#">Transplantation in Main Field</a>
+            </h5>
+            
+            <a href="#" class="project-two__item__rm">
+                <i class="icofont-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject2.jpeg" alt="alefox">
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__cats">Water Level </p>
+                                <h5 class="project-two__item__title"><a href="#">Measurement through AWD Pipe</a></h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject3.png" alt="alefox" >
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Collection</p> -->
+                                <h5 class="project-two__item__title"><a href="#"></a>Collection of Soil Samples</h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject4.jpg" alt="alefox" >
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Tree</p> -->
+                                <h5 class="project-two__item__title"><a href="#"> Field Demonsration</a></h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.item -->
+                      <div class="item">
+    <div class="project-two__item">
+        <video autoplay loop muted playsinline class="project-video-fixed">
+            <source src="assets/images/testivid2.mp4" type="video/mp4">
+           
+        </video>
+        
+        <div class="project-two__item__content">
+            <h5 class="project-two__item__title">
+                <a href="#">Paddy Fields</a>
+            </h5>
+            <a href="#" class="project-two__item__rm">
+                <i class="icofont-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject5.jpeg" alt="alefox" >
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Gardening</p> -->
+                                <h5 class="project-two__item__title"><a href="#">Rice Field</a></h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject6.jpg" alt="alefox" >
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__cats">Agriculture</p>
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Crop Harvesting & Field Work</a>
+                                </h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="item">
+    <div class="project-two__item">
+        <video autoplay loop muted playsinline class="project-video-fixed">
+            <source src="assets/images/testivid3.mp4" type="video/mp4">
+           
+        </video>
+        
+        <div class="project-two__item__content">
+            <h5 class="project-two__item__title">
+                <a href="#">Water Level Measurement through AWD Pipe</a>
+            </h5>
+            <a href="#" class="project-two__item__rm">
+                <i class="icofont-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject7.jpeg" alt="alefox">
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__cats">Training Program</p>
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Farmer Awareness & Skill Development Session</a>
+                                </h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject8.jpeg" alt="alefox" >
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Workshop</p> -->
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Capacity Building & Team Collaboration</a>
+                                </h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.project-two -->
+
+        <section class="testimonials-two" id="testimonials">
+            <div class="testimonials-two__bg"
+                style="background-image: url(assets/images/shapes/testimonials-bg-shape-2.png);"></div>
+            <div class="container">
+
+                <div class="sec-title text-center">
+                    <h6 class="sec-title__tagline bw-split-in-right">
+                        <span class="sec-title__tagline__left-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>
+                        OUR TESTIMONIALS
+                        <span class="sec-title__tagline__right-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>
+                    </h6>
+                    <h3 class="sec-title__title">What Our Beneficiaries Say!!</h3>
+                </div>
+
+                <div class="testimonials-two__wrapper">
+                    <div class="testimonials-two__wrapper__quote"
+                        style="background-image: url(assets/images/shapes/testimonials-2-quote.png);"></div>
+
+                    <div class="testimonials-two__carousel alefox-slick__carousel" data-slick-options='{
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "autoplay": true,
+    "autoplaySpeed": 4000, 
+    "infinite": true,
+    "dots": false,
+    "centerPadding": 0,
+    "arrows": true,
+    "pauseOnHover": false, 
+    "pauseOnFocus": false,
+    "nextArrow": "<button class=\"slick-next slick-arrow\"></button>",
+    "prevArrow": "<button class=\"slick-prev slick-arrow\"></button>"
+}'>
+
+
+
+                        <div class="item">
+                            <div class="testimonials-two__item">
+                                <div class="testimonials-two__item__ratings mb-4">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i>
+                                </div>
+                                <div class="testimonial-media-box">
+                                    <img src="assets/images/testi1img.jpeg" alt="Client Testimonial">
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="item">
+                            <div class="testimonials-two__item">
+                                <div class="testimonials-two__item__ratings mb-4">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i>
+                                </div>
+                                <div class="testimonial-media-box">
+                                    <img src="assets/images/testi2img.jpeg" alt="Client Testimonial">
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="item">
+                            <div class="testimonials-two__item">
+                                <div class="testimonials-two__item__ratings mb-4">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i>
+                                </div>
+                                <div class="testimonial-media-box">
+                                    <img src="assets/images/testi13img.png" alt="Client Testimonial" style="width:100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="item">
+                            <div class="testimonials-two__item">
+                                <div class="testimonials-two__item__ratings mb-4">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i>
+                                </div>
+                                <div class="testimonial-media-box">
+                                    <img src="assets/images/testi12img.jpg" alt="Client Testimonial">
+                                </div>
+                            </div>
+                        </div> -->
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.testimonials-two -->
+
+       <section class="team-one">
+    <div class="container-fluid px-5"> <div class="sec-title text-center">
+            <h6 class="sec-title__tagline bw-split-in-right">
+                <span class="sec-title__tagline__left-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+                Our Team People
+                <span class="sec-title__tagline__right-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+            </h6>
+            <h3 class="sec-title__title">Meet The Team Member</h3>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            
+            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
+                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                    <div class="team-card__image">
+                        <img src="assets/images/saibalmitra.jpeg" alt="Saibal Mitra">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__title"><a href="#">Saibal Mitra</a></h3>
+                        <p class="team-card__designation">CEO & COO</p>
+                    </div>
+                    <div class="team-card__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
+                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                    <div class="team-card__image">
+                        <img src="assets/images/1/3.png" alt="Dr. Ashok K Mohanty">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__title"><a href="#">Dr. Ashok K Mohanty</a></h3>
+                        <p class="team-card__designation">Sr Consultant & CTO</p>
+                    </div>
+                    <div class="team-card__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
+                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                    <div class="team-card__image">
+                        <img src="assets/images/1/1.png" alt="Suhas Basu">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__title"><a href="#">Suhas Basu</a></h3>
+                        <p class="team-card__designation">CFO</p>
+                    </div>
+                    <div class="team-card__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
+                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                    <div class="team-card__image">
+                        <img src="assets/images/SantanuBid.png" alt="Santanu Bid">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__title"><a href="#">Santanu Bid</a></h3>
+                        <p class="team-card__designation">CDO & Document Controller</p>
+                    </div>
+                    <div class="team-card__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
+                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='400ms'>
+                    <div class="team-card__image">
+                        <img src="assets/images/AninditaBiswas.png" alt="Anindita Biswas">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__title"><a href="#">Anindita Biswas</a></h3>
+                        <p class="team-card__designation">Document Controller</p>
+                    </div>
+                    <div class="team-card__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section><!-- /.team-one -->
+
+        <section class="product-two d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 wow fadeInLeft">
+                        <div class="sec-title text-left">
+
+                            <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                                    style="background-image: url(assets/images/shapes/leaf.png);"></span>Latest
+                                Arrivals<span class="sec-title__tagline__right-leaf"
+                                    style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                            <!-- /.sec-title__tagline -->
+
+                            <h3 class="sec-title__title bw-split-in-left">Products To Delivered </h3>
+                            <!-- /.sec-title__title -->
+                        </div><!-- /.sec-title -->
+                    </div>
+                    <div class="col-md-4 wow fadeInRight" data-wow-delay="100ms">
+                        <div class="product-two__btn">
+                            <a href="products.html" class="alefox-btn">
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                View All Products
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-y-30">
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-1.png" alt="alefox">
+
+                                <div class="product-two__item__flash">
+                                    <span class="product-two__item__flash__off">Sale</span>
+                                </div>
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Fruits</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Fresh Orange</a>
+                                </h4><!-- /.product-title -->
+                                <div class="product-two__item__price">$10.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-2.png" alt="alefox">
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Vegetables</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Red Apple</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$11.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-3.png" alt="alefox">
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Salads</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Green Lemon</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$10.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='150ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-4.png" alt="alefox">
+
+                                <div class="product-two__item__flash">
+                                    <span class="product-two__item__flash__off">20% Off</span>
+                                </div>
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Beverage</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Organic Avocado</a>
+                                </h4><!-- /.product-title -->
+                                <div class="product-two__item__price">$12.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-5.png" alt="alefox">
+
+                                <div class="product-two__item__flash">
+                                    <span class="product-two__item__flash__off">Sale</span>
+                                </div>
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Fruits</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Watermelon</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$10.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='250ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-6.png" alt="alefox">
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Grocery</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Rip Banana</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$11.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-7.png" alt="alefox">
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Salads</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Strawberry</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$10.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="product-two__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='350ms'>
+                            <div class="product-two__item__img">
+                                <img src="assets/images/products/product-1-8.png" alt="alefox">
+
+                                <div class="product-two__item__flash">
+                                    <span class="product-two__item__flash__off">20% Off</span>
+                                </div>
+
+                                <div class="product-two__item__btn">
+                                    <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                    <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                    <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div><!-- /.product-image -->
+                            <div class="product-two__item__content">
+                                <div class="product-two__item__cats">
+                                    <a href="products.html">Grocery</a>
+                                </div>
+                                <h4 class="product-two__item__title"><a href="product-details.html">Red Mango</a></h4>
+                                <!-- /.product-title -->
+                                <div class="product-two__item__price">$12.00</div><!-- /.product-price -->
+                                <div class="product-two__item__ratings">
+                                    <span class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span><span class="icofont-star"></span><span
+                                        class="icofont-star"></span>
+                                </div><!-- /.product-ratings -->
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.product-two -->
+
+        <section class="contact-two" id="Contact">
+    <div class="contact-two__bg" style="background-image: url(assets/images/farmerbasket.png);">
+    </div>
+    <div class="contact-two__shape" style="background-image: url(assets/images/shapes/contact-2-shape-1.png);">
+    </div>
+    <div class="container">
+        <div class="row">
+            
+            <!-- FIXED: Added col-12 and mb-5 mb-md-0 for mobile spacing -->
+            <div class="col-12 col-md-6 col-xl-5 mb-5 mb-md-0">
+                <form class="contact-two__form contact-form-validated form-one wow fadeInUp"
+                    data-wow-duration="1500ms" action="sendemail.php" method="POST">
+                    <div class="sec-title text-center">
+
+                        <h6 class="sec-title__tagline bw-split-in-right"><span
+                                class="sec-title__tagline__left-leaf"
+                                style="background-image: url(assets/images/shapes/leaf.png);"></span>Contact
+                            Us<span class="sec-title__tagline__right-leaf"
+                                style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                        <!-- /.sec-title__tagline -->
+
+                        <h3 class="sec-title__title">Get in Touch</h3><!-- /.sec-title__title -->
+                    </div><!-- /.sec-title -->
+                    <div class="form-one__group">
+                        <div class="form-one__control form-one__control--full">
+                            <input type="text" name="name" placeholder="Name">
+                        </div><!-- /.form-one__control form-one__control--full -->
+                        <div class="form-one__control form-one__control--full">
+                            <input type="email" name="email" placeholder="Email">
+                        </div><!-- /.form-one__control form-one__control--full -->
+                        <div class="form-one__control form-one__control--full">
+                            <input type="text" name="address" placeholder="Address">
+                        </div><!-- /.form-one__control form-one__control--full -->
+                        <div class="form-one__control form-one__control--full">
+                            <input type="text" name="phone" placeholder="Phone">
+                        </div><!-- /.form-one__control form-one__control--full -->
+                        <div class="form-one__control form-one__control--full">
+                            <div class="form-one__control__select">
+                                <label class="sr-only" for="service-select">Choose Service</label>
+                                <!-- /#service-select.sr-only -->
+
+                                <select class="selectpicker" name="service" id="service-select">
+                                    <option value="Select service">Choose Service</option>
+                                    <option value="Select service 01">To get more info.</option>
+                                </select>
+                            </div><!-- /.main-menu__service -->
+                        </div><!-- /.form-one__control form-one__control--full -->
+                        <div class="form-one__control form-one__control--full">
+                            <button type="submit" class="alefox-btn">
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                Send Request
+                            </button>
+                        </div><!-- /.form-one__control -->
+                    </div><!-- /.form-one__group -->
+                </form>
+            </div>
+            
+            <!-- FIXED: Added col-12 here as well to ensure it stacks perfectly -->
+            <div class="col-12 col-md-6 col-xl-7 d-flex align-items-center wow fadeInUp">
+                <ul class="contact-two__list w-100">
+                    <li class="contact-two__item">
+                        <div class="contact-two__item__icon"><span class="icon-phone-call"></span></div>
+                        <div class="contact-two__item__content">
+                            <h3 class="contact-two__item__title">Call This Now</h3>
+                            <p class="contact-two__item__text"><a href="tel:+918479052071">
+                                    +63-9176207621</a></p>
+                        </div>
+                    </li><!-- item -->
+                    <li class="contact-two__item">
+                        <div class="contact-two__item__icon"><span class="icon-email"></span></div>
+                        <div class="contact-two__item__content">
+                            <h3 class="contact-two__item__title">Your Message</h3>
+                            <p class="contact-two__item__text"><a
+                                    href="mailto:mitrasaibal@hotmail.com" style="word-break: break-word;">rrgi5807.philippines@gmail.com</a></p>
+                        </div>
+                    </li><!-- item -->
+                    <li class="contact-two__item">
+                        <div class="contact-two__item__icon">
+                            <a href="https://maps.google.com/?q=CF-95,+Sec+-+I,+Salt+Lake,+Kolkata+-+700064" target="_blank" style="color: inherit; text-decoration: none;">
+                                <span class="icon-location"></span>
+                            </a>
+                        </div>
+                        <div class="contact-two__item__content">
+                            <h3 class="contact-two__item__title">Our Location</h3>
+                            <p class="contact-two__item__text">
+                                <!-- FIXED: Added word-break to prevent mobile overflow -->
+                                <a href="https://maps.google.com/?q=Paradise+Street,+Poblacion+Proper,+Mambusao,+Capiz,+Philippines+5807"
+   target="_blank"
+   style="color: inherit; text-decoration: none; word-break: break-word;">
+    Paradise Street, Poblacion Proper, Mambusao, Capiz, Region VI, Philippines 5807
+</a>
+                            </p>
+                        </div>
+                    </li><!-- item -->
+
+                    <!-- <li class="contact-two__item">
+                        <div class="contact-two__item__icon">
+                            <a href="https://maps.google.com/?q=Plot+No.+-+1554/3207,+Soubhagya+Nagar,+Lane+-+14+A,+Siripur+-+751003,+Bhubaneshwar,+Odisha" target="_blank" style="color: inherit; text-decoration: none;">
+                                <span class="icon-location"></span>
+                            </a>
+                        </div>
+                        <div class="contact-two__item__content">
+                            <h3 class="contact-two__item__title">Our Location</h3>
+                            <p class="contact-two__item__text">
+                                
+                                <a href="https://maps.google.com/?q=Plot+No.+-+1554/3207,+Soubhagya+Nagar,+Lane+-+14+A,+Siripur+-+751003,+Bhubaneshwar,+Odisha" target="_blank" style="color: inherit; text-decoration: none; word-break: break-word;">
+                                    Plot No. - 1554/3207, Soubhagya Nagar, Lane - 14 A, Siripur - 751003,Bhubaneshwar, Odisha
+                                </a>
+                            </p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+        <!-- <section class="contact-map">
+    <div class="google-map__">
+        <iframe title="Krishibandhu Cropscience Location"
+            src="https://maps.google.com/maps?q=CF-95,+Sector+1,+Salt+Lake+City,+Kolkata,+West+Bengal+700064&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="map__" 
+            allowfullscreen 
+            style="width: 100%; height: 500px; border: 0;">
+        </iframe>
+    </div>
+    </section>/.contact-map -->
+
+    <section class="contact-map">
+    <div class="google-map__">
+       <iframe
+    title="Rice-Rise Global Initiative Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.190026689907!2d122.59260967481505!3d11.430206288761093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33af634b363552a7%3A0x2d757b3090a5aac0!2sParadise%20Street!5e1!3m2!1sen!2sin!4v1781329880045!5m2!1sen!2sin"
+    style="width:100%; height:500px; border:0; filter:none !important; -webkit-filter:none !important;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    </div>
+</section>
+
+        <section class="blog-one d-none" id="blog">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>From the Blog<span
+                            class="sec-title__tagline__right-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                    <!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title bw-split-in-left">Latest News & Articles</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="blog-one__carousel alefox-owl__carousel alefox-owl__carousel--with-shadow alefox-owl__carousel--basic-nav owl-carousel owl-theme"
+                    data-owl-options='{
+				"items": 1,
+				"margin": 30,
+				"loop": false,
+				"smartSpeed": 700,
+				"nav": false,
+				"navText": ["<span class=\"icofont-bubble-left\"></span>","<span class=\"icofont-bubble-righ\"></span>"],
+				"dots": false,
+				"autoplay": false,
+				"responsive": {
+					"0": {
+						"items": 1
+					},
+					"768": {
+						"items": 2
+					},
+					"992": {
+						"items": 3
+					}
+				}
+			}'>
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="blog-card__image">
+                                <img src="assets/images/blog/blog-1-1.jpg"
+                                    alt="This Leader in Organic Agriculture Growth">
+                                <img src="assets/images/blog/blog-1-1.jpg"
+                                    alt="This Leader in Organic Agriculture Growth">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span
+                                        class="sr-only">This Leader in Organic Agriculture Growth</span>
+                                    <!-- /.sr-only --></a>
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><i class="icofont-ui-user"></i>Admin: <a href="blog-list-right.html">Lorat</a>
+                                    </li>
+                                    <li><i class="icofont-comment"></i>Comments (5)</li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">This Leader in Organic
+                                        Agriculture Growth</a></h3><!-- /.blog-card__title -->
+                                <p class="blog-card__text">
+                                    We business standard chunk ofI nibh velit auctor aliquet sollic tudin.
+                                </p><!-- /.blog-card__text -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    <i class="icofont-arrow-right"></i>
+                                    Read more
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="blog-card__image">
+                                <img src="assets/images/blog/blog-1-2.jpg" alt="How to Findout Healthy Food For Body">
+                                <img src="assets/images/blog/blog-1-2.jpg" alt="How to Findout Healthy Food For Body">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span
+                                        class="sr-only">How to Findout Healthy Food For Body</span>
+                                    <!-- /.sr-only --></a>
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><i class="icofont-ui-user"></i>Admin: <a href="blog-list-right.html">Lorat</a>
+                                    </li>
+                                    <li><i class="icofont-comment"></i>Comments (5)</li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">How to Findout Healthy
+                                        Food For Body</a></h3><!-- /.blog-card__title -->
+                                <p class="blog-card__text">
+                                    We business standard chunk ofI nibh velit auctor aliquet sollic tudin.
+                                </p><!-- /.blog-card__text -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    <i class="icofont-arrow-right"></i>
+                                    Read more
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="blog-card__image">
+                                <img src="assets/images/blog/blog-1-3.jpg" alt="We Are Ripening Fruits Healthy Blog">
+                                <img src="assets/images/blog/blog-1-3.jpg" alt="We Are Ripening Fruits Healthy Blog">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span
+                                        class="sr-only">We Are Ripening Fruits Healthy Blog</span>
+                                    <!-- /.sr-only --></a>
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><i class="icofont-ui-user"></i>Admin: <a href="blog-list-right.html">Lorat</a>
+                                    </li>
+                                    <li><i class="icofont-comment"></i>Comments (5)</li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">We Are Ripening Fruits
+                                        Healthy Blog</a></h3><!-- /.blog-card__title -->
+                                <p class="blog-card__text">
+                                    We business standard chunk ofI nibh velit auctor aliquet sollic tudin.
+                                </p><!-- /.blog-card__text -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    <i class="icofont-arrow-right"></i>
+                                    Read more
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-one -->
+
+        <section class="cta-three">
+            <div class="cta-three__shape-left" style="background-image: url(assets/images/shapes/cta-3-1.png);"></div>
+            <div class="cta-three__shape-right" style="background-image: url(assets/images/shapes/cta-3-2.png);"></div>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="alefox-stretch-element-inside-column">
+                            <div class="cta-three__thumb">
+                                <img src="assets/images/smartcultivation.png" alt="alefox" class="a5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="200ms">
+                        <div class="cta-three__content">
+                            <h3 class="cta-three__title">
+                                Let’s Cultivate a Smarter <br> Future Together
+                            </h3>
+                            <p class="cta-three__text">
+                                Reach out to explore how RRGI climate-smart solutions—ranging from M-DSR and
+                                AWD to drone monitoring, soil testing, and carbon credits—can transform your fields and
+                                empower your farming journey.
+                            </p>
+                            <a href="#Contact" class="alefox-btn">
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                <span class="alefox-btn__item"></span>
+                                Reach Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.cta-three -->
+
+        <footer class="main-footer background-black">
+            <div class="main-footer__bg background-black"
+                style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div>
+            <!-- /.main-footer__bg -->
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="footer-widget footer-widget--about">
+                                <!-- <a href="index.html" class="footer-widget__logo">
+                                    <img src="assets/images/logo-light.png" width="147" alt="Alefox HTML Template">
+                                </a> -->
+                                <a href="index.html" class="footer-widget__logo mt-4 a2">
+                                    Rice-Rise Global Initiative
+                                </a> 
+                                
+                                <p class="footer-widget__description text-white mt-2" style="margin-top: 10px;">
+                                    RRGI is a climate-smart agri-enterprise
+                                    empowering farmers with sustainable, tech-driven rice farming solutions.
+                                </p>
+                                <div class="footer-widget__social">
+
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        <span class="sr-only">Facebook</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                                        <span class="sr-only">Pinterest</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        <span class="sr-only">Twitter</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        <span class="sr-only">Instagram</span>
+                                    </a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Service</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="#services">Direct-Seeded Rice (M-DSR)</a></li>
+                                    <li><a href=#services">AWD Irrigation</a></li>
+                                    <li><a href="#services">Agri-Tech Integration</a></li>
+                                    <li><a href="#services">Drone-Based Crop Monitoring</a></li>
+                                    <li><a href="#services">Carbon Credit Monetization</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget footer-widget--links footer-widget--links-two">
+                                <h2 class="footer-widget__title">Links</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#project">Project</a></li>
+                                    <li><a href="#testimonials">Testimonials</a></li>
+                                    <li><a href="#Contact">Contact Us</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="footer-widget footer-widget--about">
+                                <h2 class="footer-widget__title">Contact Us</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__info">
+                                    <li>
+                                        <span class="footer-widget__info__icon"><i
+                                                class="icofont-clock-time"></i></span>
+                                        Open Hours : <br> Mon - Sat: 10:00 am. - 6:00 pm.
+                                    </li>
+                                    <li>
+                                        <span class="footer-widget__info__icon"><i
+                                                class="icofont-location-pin"></i></span>
+                                        Paradise Street, Poblacion Proper, Mambusao, Capiz, Region VI, Philippines 5807
+                                    </li>
+                                    <!-- <li>
+                                        <span class="footer-widget__info__icon"><i
+                                                class="icofont-location-pin"></i></span>
+                                        Plot No. - 1554/3207, Soubhagya Nagar, Lane - 14 A, Siripur -
+                                        751003,Bhubaneshwar, Odisha
+                                    </li> -->
+                                    <li>
+                                        <span class="footer-widget__info__icon"><i class="icofont-phone"></i></span>
+                                        <a href="tel:+918479052071">+63-9176207621</a>
+                                    </li>
+                                </ul><!-- /.list-unstyled -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-md-6 -->
+
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__top -->
+            <div class="main-footer__bottom">
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <!-- <p class="main-footer__copyright">
+                            &copy; Copyright <span class="dynamic-year"></span> by Alefox HTML Template.
+                        </p> -->
+                        <p class="main-footer__copyright">&copy; Copyright 2025 Rice-Rise Global Initiative. All Rights Reserved. Designed &amp; Developed By <a
+                                href="https://startupsahay.com/" target="_blank" class="text-white">Start-up Sahay</a>
+                        </p>
+                    </div><!-- /.main-footer__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__bottom -->
+        </footer><!-- /.main-footer -->
+
+    </div><!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <!-- <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="155" alt="" /></a> -->
+                <a href="index.html" class="a3">
+                    Rice-Rise Global Initiative
+                </a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:rrgi5807.philippines@gmail.com">rrgi5807.philippines@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+639176207621">+63-9176207621</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="alefox-btn">
+                    <span><i class="icon-magnifying-glass"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+    <!-- Sidebar One Start -->
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <div class="sidebar-one__close"><i class="icofont-close-line"></i></div><!-- /.siderbar-close -->
+            <div class="sidebar-one__logo">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" alt="Careox HTML"
+                        width="147"></a>
+            </div><!-- /.sidebar-one__logo-box -->
+            <p class="sidebar-one__text">
+                Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ
+                puru rhoncu tincidunt odio ultrices. Sed feugiat feugiat felis.
+            </p>
+            <h4 class="sidebar-one__title">Contact Info:</h4>
+            <ul class="sidebar-one__info">
+                <li>
+                    <span class="fas fa-map-marker-alt"></span>
+                    85 Ketch Harbour RoadBensalem, PA 19020
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+                    <a href="tel:09969569535">099 695 695 35</a>
+                </li>
+            </ul>
+            <div class="sidebar-one__social">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /sidebar-one__socila -->
+            <h4 class="sidebar-one__title">Newsletter:</h4>
+            <form action="#" data-url="MAILCHIMP_FORM_URL" class="sidebar-one__newsletter mc-form">
+                <input type="text" name="EMAIL" placeholder="Email address">
+                <button type="submit" class="fas fa-paper-plane">
+                    <span class="sr-only">submit</span><!-- /.sr-only -->
+                </button>
+            </form><!-- /.footer-widget__newsletter mc-form -->
+        </div><!-- /.sidebar__content -->
+    </aside>
+    <!-- Sidebar One Start -->
+
+    <!-- back-to-top-start -->
+    <a href="#" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </a>
+    <!-- back-to-top-end -->
+
+
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/progress-bar/knob.js"></script>
+    <!-- gsap js -->
+    <script src="assets/vendors/gsap/gsap.js"></script>
+    <script src="assets/vendors/gsap/scrolltrigger.min.js"></script>
+    <script src="assets/vendors/gsap/splittext.min.js"></script>
+    <script src="assets/vendors/gsap/alefox-split.js"></script>
+    <!-- template js -->
+    <script src="assets/js/alefox.js"></script>
+
+    <style>
+        .circle-mv-section {
+            background: #e8f5e9;
+            padding: 50px 20px 80px 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+        .mv-header h2 {
+            font-size: 32px;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .mv-header p {
+            font-size: 18px;
+            color: #4e4e4e;
+            margin-bottom: 60px;
+        }
+
+        .circle-layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .mv-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 25px;
+            width: 450px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .mv-circle {
+            width: 70px;
+            height: 70px;
+            background: #c8e6c9;
+            color: #2e7d32;
+            font-size: 32px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mv-card h3 {
+            font-size: 22px;
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .mv-card p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .connector-line {
+            width: 60px;
+            height: 4px;
+            background: #81c784;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .a1 {
+            font-size: 20px;
+            line-height: 30px;
+            width: 800px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .a2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .a3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 5px 15px;
+            border-radius: 10px;
+            line-height: 30px;
+            margin: 3% 0 0 0;
+        }
+
+        .a4 {
+            height: 448px;
+        }
+
+        .a5 {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Tablet View (768px and below) */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .team-card__image {
+                margin: 0 auto;
+            }
+        }
+
+        /* Mobile View (480px and below) */
+        @media (max-width: 480px) {
+            .team-card__image {
+                margin: 0 3rem;
+            }
+        }
+
+        .main-slider-three__item {
+            position: relative;
+            background-color: var(--alefox-black, #122f2a);
+            padding-top: 315px;
+            /* padding-bottom: 220px; */
+            padding-bottom: 100px;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.scrollToLink a').forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove 'expanded' class to close mobile menu
+                document.querySelector('.mobile-nav__wrapper').classList.remove('expanded');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
