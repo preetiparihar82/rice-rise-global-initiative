@@ -40,6 +40,150 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/alefox.css?v=36579.255" />
     <style>
+        /* --- Global Section Reset --- */
+.staff-profile-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.staff-profile-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- Header Styling --- */
+.staff-profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.staff-profile-tagline {
+    color: #1b5e20; /* Dark Green to match branding */
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.staff-profile-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2639;
+    margin: 0;
+}
+
+/* --- Grid Layout (Fully Responsive) --- */
+/* --- Grid Layout (Forces 4 in a row) --- */
+.staff-profile-grid {
+    display: grid;
+    /* This exact line forces 4 equal columns */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    justify-items: center;
+}
+
+/* --- Media Queries for Tablets and Mobile --- */
+/* Drops to 2 in a row for medium screens (like iPads) */
+@media (max-width: 1024px) {
+    .staff-profile-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Drops to 1 in a row for mobile phones */
+@media (max-width: 768px) {
+    .staff-profile-title {
+        font-size: 28px;
+    }
+    
+    .staff-profile-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}
+/* --- Card Styling --- */
+.staff-profile-card {
+    background: #f8fbf9;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.staff-profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(27, 94, 32, 0.15);
+    border-color: #dcedc8;
+}
+
+/* --- Image Styling --- */
+.staff-profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+    border: 3px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.staff-profile-card:hover .staff-profile-image {
+    border-color: #1b5e20; 
+}
+
+.staff-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --- Text & Content Styling --- */
+.staff-profile-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 5px 0;
+}
+
+.staff-profile-designation {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.staff-profile-email {
+    display: inline-block;
+    font-size: 14px;
+    color: #1b5e20;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.2s ease;
+}
+
+.staff-profile-email:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* --- Media Queries for Mobile Fine-Tuning --- */
+@media (max-width: 768px) {
+    .staff-profile-title {
+        font-size: 28px;
+    }
+    
+    .staff-profile-grid {
+        gap: 20px;
+    }
+}
 /* =========================================
    PROJECT LANDSCAPE UNIFORMITY
    ========================================= */
@@ -50,7 +194,7 @@
 }
 
 .logo-img{
-    height: 85px;     
+    height: 80px;     
     width: auto;
     display: block;
     object-fit: contain;
@@ -1174,7 +1318,7 @@
                         <span class="sec-title__tagline__right-leaf"
                             style="background-image: url(assets/images/shapes/leaf.png);"></span>
                     </h6>
-                    <h3 class="sec-title__title">What Our Beneficiaries Say!!</h3>
+                    <!-- <h3 class="sec-title__title">What Our Beneficiaries Say!!</h3> -->
                 </div>
 
                 <div class="testimonials-two__wrapper">
@@ -1261,100 +1405,98 @@
             </div>
         </section><!-- /.testimonials-two -->
 
-       <section class="team-one">
-    <div class="container-fluid px-5"> <div class="sec-title text-center">
-            <h6 class="sec-title__tagline bw-split-in-right">
+       <section class="staff-profile-section">
+    <div class="staff-profile-container">
+        
+        <div class="staff-profile-header">
+             <h6 class="sec-title__tagline bw-split-in-right">
+
                 <span class="sec-title__tagline__left-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+
                 Our Team People
+
                 <span class="sec-title__tagline__right-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+
             </h6>
-            <h3 class="sec-title__title">Meet The Team Member</h3>
+            <h3 class="staff-profile-title">Meet The Team Members</h3>
         </div>
 
-        <div class="row mt-5 justify-content-center">
-            
-            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
-                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                    <div class="team-card__image">
-                        <img src="assets/images/saibalmitra.jpeg" alt="Saibal Mitra">
-                    </div>
-                    <div class="team-card__content">
-                        <h3 class="team-card__title"><a href="#">Saibal Mitra</a></h3>
-                        <p class="team-card__designation">CEO & COO</p>
-                    </div>
-                    <div class="team-card__social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="staff-profile-grid">
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Ramises Nudalo Solante">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Dr.Ramises Nudalo Solante</h3>
+                    <p class="staff-profile-designation">President</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saibal@example.com" target="_blank" class="staff-profile-email">solantedodong@gmail.com </a>
                 </div>
             </div>
 
-            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
-                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
-                    <div class="team-card__image">
-                        <img src="assets/images/1/3.png" alt="Dr. Ashok K Mohanty">
-                    </div>
-                    <div class="team-card__content">
-                        <h3 class="team-card__title"><a href="#">Dr. Ashok K Mohanty</a></h3>
-                        <p class="team-card__designation">Sr Consultant & CTO</p>
-                    </div>
-                    <div class="team-card__social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Emelita Pongcol Solante">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Dr.Emelita Pongcol Solante</h3>
+                    <p class="staff-profile-designation">Treasurer</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suhas@example.com" target="_blank" class="staff-profile-email">lanteemil@gmail.com </a>
                 </div>
             </div>
 
-            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
-                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
-                    <div class="team-card__image">
-                        <img src="assets/images/1/1.png" alt="Suhas Basu">
-                    </div>
-                    <div class="team-card__content">
-                        <h3 class="team-card__title"><a href="#">Suhas Basu</a></h3>
-                        <p class="team-card__designation">CFO</p>
-                    </div>
-                    <div class="team-card__social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Rae Norrein Solante Ledesma">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Rae Norrein Solante Ledesma</h3>
+                    <p class="staff-profile-designation">Corporate Secretary</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=santanu@example.com" target="_blank" class="staff-profile-email">raensolante25@gmail.com</a>
                 </div>
             </div>
 
-            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
-                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
-                    <div class="team-card__image">
-                        <img src="assets/images/SantanuBid.png" alt="Santanu Bid">
-                    </div>
-                    <div class="team-card__content">
-                        <h3 class="team-card__title"><a href="#">Santanu Bid</a></h3>
-                        <p class="team-card__designation">CDO & Document Controller</p>
-                    </div>
-                    <div class="team-card__social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Rae Marti P. Solante">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Rae Marti P. Solante</h3>
+                    <p class="staff-profile-designation">Executive Trustee</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anindita@example.com" target="_blank" class="staff-profile-email">rsolant09@gmail.com</a>
                 </div>
             </div>
 
-            <div class="col-lg-20 col-md-6 col-sm-12 mb-4">
-                <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='400ms'>
-                    <div class="team-card__image">
-                        <img src="assets/images/AninditaBiswas.png" alt="Anindita Biswas">
-                    </div>
-                    <div class="team-card__content">
-                        <h3 class="team-card__title"><a href="#">Anindita Biswas</a></h3>
-                        <p class="team-card__designation">Document Controller</p>
-                    </div>
-                    <div class="team-card__social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Stephanie L. Solante">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Stephanie L. Solante</h3>
+                    <p class="staff-profile-designation">Executive Trustee</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anindita@example.com" target="_blank" class="staff-profile-email">stephanielatosolante@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Er. Saibal Mitra">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Er. Saibal Mitra</h3>
+                    <p class="staff-profile-designation">Founder, CEO & COO</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anindita@example.com" target="_blank" class="staff-profile-email">Mitrasaibal@hotmail.com</a>
+                </div>
+            </div>
+
+            <div class="staff-profile-card">
+                <div class="staff-profile-image">
+                    <img src="assets/images/" alt="Ashok Kumar Mohanty">
+                </div>
+                <div class="staff-profile-details">
+                    <h3 class="staff-profile-name">Dr.Ashok Kumar Mohanty</h3>
+                    <p class="staff-profile-designation">Technical Expert </p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anindita@example.com" target="_blank" class="staff-profile-email">drakmohanty1962@gmail.com </a>
                 </div>
             </div>
 
