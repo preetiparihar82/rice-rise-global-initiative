@@ -5807,6 +5807,16 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--alefox-base, #018447);
 }
 
+
+@media (max-width: 767px) {
+  .cta-four .a1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    word-wrap: break-word; 
+    box-sizing: border-box; 
+    width: 100%;
+  }
+}
 .cta-five {
   position: relative;
   padding: 0 0 120px;
