@@ -41,282 +41,293 @@
     <link rel="stylesheet" href="assets/css/alefox.css?v=36579.255" />
     <style>
         /* --- Global Section Reset --- */
-.staff-profile-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+        .staff-profile-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-.staff-profile-container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
+        .staff-profile-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-/* --- Header Styling --- */
-.staff-profile-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
+        /* --- Header Styling --- */
+        .staff-profile-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.staff-profile-tagline {
-    color: #1b5e20; /* Dark Green to match branding */
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+        .staff-profile-tagline {
+            color: #1b5e20;
+            /* Dark Green to match branding */
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
 
-.staff-profile-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a2639;
-    margin: 0;
-}
+        .staff-profile-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a2639;
+            margin: 0;
+        }
 
-/* --- Grid Layout (Fully Responsive) --- */
-/* --- Grid Layout (Forces 4 in a row) --- */
-.staff-profile-grid {
-    display: grid;
-    /* This exact line forces 4 equal columns */
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 30px;
-    justify-items: center;
-}
+        /* --- Grid Layout (Fully Responsive) --- */
+        /* --- Grid Layout (Forces 4 in a row) --- */
+        .staff-profile-grid {
+            display: grid;
+            /* This exact line forces 4 equal columns */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
 
-/* --- Media Queries for Tablets and Mobile --- */
-/* Drops to 2 in a row for medium screens (like iPads) */
-@media (max-width: 1024px) {
-    .staff-profile-grid {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
+        /* --- Media Queries for Tablets and Mobile --- */
+        /* Drops to 2 in a row for medium screens (like iPads) */
+        @media (max-width: 1024px) {
+            .staff-profile-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-/* Drops to 1 in a row for mobile phones */
-@media (max-width: 768px) {
-    .staff-profile-title {
-        font-size: 28px;
-    }
-    
-    .staff-profile-grid {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-    }
-}
-/* --- Card Styling --- */
-.staff-profile-card {
-    background: #f8fbf9;
-    border-radius: 16px;
-    padding: 30px 20px;
-    text-align: center;
-    width: 100%;
-    max-width: 280px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid transparent;
-}
+        /* Drops to 1 in a row for mobile phones */
+        @media (max-width: 768px) {
+            .staff-profile-title {
+                font-size: 28px;
+            }
 
-.staff-profile-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(27, 94, 32, 0.15);
-    border-color: #dcedc8;
-}
+            .staff-profile-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
 
-/* --- Image Styling --- */
-.staff-profile-image {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    padding: 5px;
-    background: white;
-    border: 3px solid #e0e0e0;
-    transition: border-color 0.3s ease;
-}
+        /* --- Card Styling --- */
+        .staff-profile-card {
+            background: #f8fbf9;
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 280px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid transparent;
+        }
 
-.staff-profile-card:hover .staff-profile-image {
-    border-color: #1b5e20; 
-}
+        .staff-profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(27, 94, 32, 0.15);
+            border-color: #dcedc8;
+        }
 
-.staff-profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
+        /* --- Image Styling --- */
+        .staff-profile-image {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            background: white;
+            border: 3px solid #e0e0e0;
+            transition: border-color 0.3s ease;
+        }
 
-/* --- Text & Content Styling --- */
-.staff-profile-name {
-    font-size: 20px;
-    font-weight: 700;
-    color: #222;
-    margin: 0 0 5px 0;
-}
+        .staff-profile-card:hover .staff-profile-image {
+            border-color: #1b5e20;
+        }
 
-.staff-profile-designation {
-    font-size: 14px;
-    color: #666;
-    margin: 0 0 12px 0;
-    font-weight: 500;
-}
+        .staff-profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-.staff-profile-email {
-    display: inline-block;
-    font-size: 14px;
-    color: #1b5e20;
-    text-decoration: none;
-    margin-bottom: 5px;
-    transition: color 0.2s ease;
-}
+        /* --- Text & Content Styling --- */
+        .staff-profile-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #222;
+            margin: 0 0 5px 0;
+        }
 
-.staff-profile-email:hover {
-    color: #000;
-    text-decoration: underline;
-}
+        .staff-profile-designation {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 12px 0;
+            font-weight: 500;
+        }
 
-/* --- Media Queries for Mobile Fine-Tuning --- */
-@media (max-width: 768px) {
-    .staff-profile-title {
-        font-size: 28px;
-    }
-    
-    .staff-profile-grid {
-        gap: 20px;
-    }
-}
-/* =========================================
+        .staff-profile-email {
+            display: inline-block;
+            font-size: 14px;
+            color: #1b5e20;
+            text-decoration: none;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+
+        .staff-profile-email:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* --- Media Queries for Mobile Fine-Tuning --- */
+        @media (max-width: 768px) {
+            .staff-profile-title {
+                font-size: 28px;
+            }
+
+            .staff-profile-grid {
+                gap: 20px;
+            }
+        }
+
+        /* =========================================
    PROJECT LANDSCAPE UNIFORMITY
    ========================================= */
-.a3{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
+        .a3 {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
 
-.logo-img{
-    height: 80px;     
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
-.project-two__item img, 
-.project-two__item .project-video-fixed {
-    width: 100%;
-    height: 350px !important; 
-    object-fit: cover;        
-    display: block;
-    transition: all 0.5s ease;
-}
+        .logo-img {
+            height: 80px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
 
-
-.project-two__item:hover img,
-.project-two__item:hover .project-video-fixed {
-    transform: scale(1.05) rotate(1deg);
-}
-
-.project-two__item__content {
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-}
-
-/* --- THE OVERLAY HEIGHT FIX --- */
+        .project-two__item img,
+        .project-two__item .project-video-fixed {
+            width: 100%;
+            height: 350px !important;
+            object-fit: cover;
+            display: block;
+            transition: all 0.5s ease;
+        }
 
 
-.project-two__item__content::after {
-    top: auto !important;     
-    bottom: 0 !important;     
-}
+        .project-two__item:hover img,
+        .project-two__item:hover .project-video-fixed {
+            transform: scale(1.05) rotate(1deg);
+        }
 
-.project-two__item:hover .project-two__item__content::after {
-    height: 35% !important;  
-}
-/* =========================================
+        .project-two__item__content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        /* --- THE OVERLAY HEIGHT FIX --- */
+
+
+        .project-two__item__content::after {
+            top: auto !important;
+            bottom: 0 !important;
+        }
+
+        .project-two__item:hover .project-two__item__content::after {
+            height: 35% !important;
+        }
+
+        /* =========================================
    1. DESKTOP TESTIMONIAL STYLES
    ========================================= */
-.testimonial-media-box {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    position: relative;
-    z-index: 5;
-}
+        .testimonial-media-box {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 5;
+        }
 
-.testimonial-media-box img,
-.testimonial-media-box video {
-    width: 100%;
-    height: 700px;
-    max-height: 400px;
-    object-fit: contain;
-    display: block;
-}
+        .testimonial-media-box img,
+        .testimonial-media-box video {
+            width: 100%;
+            height: 700px;
+            max-height: 400px;
+            object-fit: contain;
+            display: block;
+        }
 
-.testimonials-two__item {
-    text-align: center;
-    padding-bottom: 10px;
-}
+        .testimonials-two__item {
+            text-align: center;
+            padding-bottom: 10px;
+        }
 
-/* =========================================
+        /* =========================================
    2. INVISIBLE SLIDER CLICK ZONES
    ========================================= */
-.testimonials-two__carousel {
-    position: relative;
-}
+        .testimonials-two__carousel {
+            position: relative;
+        }
 
-.testimonials-two__carousel .slick-arrow {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 25%;
-    z-index: 99;
-    background: transparent;
-    border: none;
-    color: transparent;
-    cursor: pointer;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-}
+        .testimonials-two__carousel .slick-arrow {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 25%;
+            z-index: 99;
+            background: transparent;
+            border: none;
+            color: transparent;
+            cursor: pointer;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-.testimonials-two__carousel .slick-prev { left: 0; }
-.testimonials-two__carousel .slick-next { right: 0; }
+        .testimonials-two__carousel .slick-prev {
+            left: 0;
+        }
 
-/* =========================================
+        .testimonials-two__carousel .slick-next {
+            right: 0;
+        }
+
+        /* =========================================
    3. STRICT MOBILE OVERRIDES
    ========================================= */
-@media (max-width: 767.98px) {
-    
-    .testimonials-two__carousel .testimonial-media-box {
-        box-shadow: none !important;
-        border: none !important;
-        height: auto !important;
-    }
+        @media (max-width: 767.98px) {
 
-    .testimonials-two__carousel .testimonial-media-box img,
-    .testimonials-two__carousel .testimonial-media-box video {
-        height: auto !important; 
-        max-height: 80vh !important; 
-      
-        object-fit: contain !important; 
-        background-color: transparent !important; 
-    }
-}
-/* =========================================
+            .testimonials-two__carousel .testimonial-media-box {
+                box-shadow: none !important;
+                border: none !important;
+                height: auto !important;
+            }
+
+            .testimonials-two__carousel .testimonial-media-box img,
+            .testimonials-two__carousel .testimonial-media-box video {
+                height: auto !important;
+                max-height: 80vh !important;
+
+                object-fit: contain !important;
+                background-color: transparent !important;
+            }
+        }
+
+        /* =========================================
    FORCE 5-COLUMN GRID (20% WIDTH)
    ========================================= */
 
-@media (min-width: 992px) {
-    .col-lg-20 {
-        flex: 0 0 20% !important;
-        max-width: 20% !important;
-        padding-right: 15px !important;
-        padding-left: 15px !important;
-    }
-}
+        @media (min-width: 992px) {
+            .col-lg-20 {
+                flex: 0 0 20% !important;
+                max-width: 20% !important;
+                padding-right: 15px !important;
+                padding-left: 15px !important;
+            }
+        }
     </style>
 </head>
 
@@ -344,8 +355,9 @@
                         <img src="assets/images/logo-light.png" alt="Alefox HTML" width="147">
                     </a> -->
                     <a href="index.html" class="a3">
-    <img src="./assets/images/ricerise_img.png" alt="Rice-Rise Global Initiative Logo" class="logo-img">
-</a>
+                        <img src="./assets/images/ricerise_img.png" alt="Rice-Rise Global Initiative Logo"
+                            class="logo-img">
+                    </a>
                 </div><!-- /.main-header__logo -->
                 <nav class="main-header__nav main-menu">
                     <ul class="main-menu__list one-page-scroll-menu">
@@ -496,7 +508,8 @@
                 </div>
                 <div class="item">
                     <div class="main-slider-three__item">
-                        <div class="main-slider-three__bg" style="background-image: url(assets/images/Carbon_credits01.jpg);">
+                        <div class="main-slider-three__bg"
+                            style="background-image: url(assets/images/Carbon_credits01.jpg);">
                             <div class="main-slider-three__bg__color"></div>
                             <div class="main-slider-three__bg__color"></div>
                             <div class="main-slider-three__bg__color"></div>
@@ -601,12 +614,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                       <div class="col-lg-6">
-    <div class="about-three__image wow fadeInLeft" data-wow-delay="200ms">
-        <video autoplay loop muted playsinline style="height: 600px; width: 500px; object-fit: cover; border-radius: inherit;">
-            <source src="assets/images/testivid2.mp4" type="video/mp4">
-        </video>
-    </div></div><!-- /.about-three__image -->
+                        <div class="col-lg-6">
+                            <div class="about-three__image wow fadeInLeft" data-wow-delay="200ms">
+                                <video autoplay loop muted playsinline
+                                    style="height: 600px; width: 500px; object-fit: cover; border-radius: inherit;">
+                                    <source src="assets/images/testivid2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div><!-- /.about-three__image -->
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="100ms">
                         <div class="about-three__content">
@@ -645,28 +660,29 @@
                                 About More
                             </a> -->
                             <!-- We wrap both buttons in a flex container so they sit side-by-side with a nice gap -->
-<div class="d-flex flex-wrap gap-5">
-    
-    <!-- Your Original Button -->
-    <a href="#Contact" class="alefox-btn">
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        About More
-    </a>
+                            <div class="d-flex flex-wrap gap-5">
 
-    <!-- Your New PDF Button -->
-    <!-- CHANGE the href link to where your actual PDF is saved -->
-    <a href="/AWD Rice Cultivation Training Rev.pdf" target="_blank" download class="alefox-btn">
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        <span class="alefox-btn__item"></span>
-        Project Overview
-    </a>
+                                <!-- Your Original Button -->
+                                <a href="#Contact" class="alefox-btn">
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    About More
+                                </a>
 
-</div>
+                                <!-- Your New PDF Button -->
+                                <!-- CHANGE the href link to where your actual PDF is saved -->
+                                <a href="/AWD Rice Cultivation Training Rev.pdf" target="_blank" download
+                                    class="alefox-btn">
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    <span class="alefox-btn__item"></span>
+                                    Project Overview
+                                </a>
+
+                            </div>
                         </div><!-- /.why-choose-two__content -->
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
@@ -683,7 +699,9 @@
                     <div class="mv-circle">🎯</div>
                     <h3>Our Mission</h3>
                     <p>
-                        To bridge international AgTech innovation with local farming communities by deploying Alternate Wetting and Drying (AWD)methodologies, securing fair carbon/climate financing, and establishing transparent, verified digital agricultural tracking frameworks on Philippine soil.
+                        To bridge international AgTech innovation with local farming communities by deploying Alternate
+                        Wetting and Drying (AWD)methodologies, securing fair carbon/climate financing, and establishing
+                        transparent, verified digital agricultural tracking frameworks on Philippine soil.
                     </p>
                 </div>
                 <div class="connector-line"></div>
@@ -691,43 +709,44 @@
                     <div class="mv-circle">🌾</div>
                     <h3>Our Vision</h3>
                     <p>
-                         To be the leading catalyst for climate-resilient rice farming systems in Southeast Asia, where data-driven technology and sustainable practices empower smallholder farmers, eliminate ecological poverty, and secure global food abundance.
+                        To be the leading catalyst for climate-resilient rice farming systems in Southeast Asia, where
+                        data-driven technology and sustainable practices empower smallholder farmers, eliminate
+                        ecological poverty, and secure global food abundance.
                     </p>
                 </div>
             </div>
         </section>
 
-       <section class="funfact-one mt-5">
-    <div class="container">
-        <ul class="list-unstyled funfact-one__list ebal-two-item-fact">
-            <li>
-                <div class="funfact-one__list__icon"><span class="icon-management"></span></div>
-                <div class="funfact-one__list__content">
-                    <h5 class="funfact-one__list__number count-box">
-                        <span class="count-text" data-stop="2000" data-speed="1500"></span>+
-                    </h5>
-                    <p class="funfact-one__list__text">Total Hectare</p>
-                </div>
-            </li>
-            <li>
-                <div class="funfact-one__list__icon"><span class="icon-sustainability"></span></div>
-                <div class="funfact-one__list__content">
-                    <h5 class="funfact-one__list__number count-box">
-                        <span class="count-text" data-stop="0" data-speed="1500"></span>Dummy
-                    </h5>
-                    <p class="funfact-one__list__text">Total Farmers</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section><!-- /.funfact-one -->
+        <section class="funfact-one mt-5">
+            <div class="container">
+                <ul class="list-unstyled funfact-one__list ebal-two-item-fact">
+                    <li>
+                        <div class="funfact-one__list__icon"><span class="icon-management"></span></div>
+                        <div class="funfact-one__list__content">
+                            <h5 class="funfact-one__list__number count-box">
+                                <span class="count-text" data-stop="2000" data-speed="1500"></span>+
+                            </h5>
+                            <p class="funfact-one__list__text">Total Hectare</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="funfact-one__list__icon"><span class="icon-sustainability"></span></div>
+                        <div class="funfact-one__list__content">
+                            <h5 class="funfact-one__list__number count-box">
+                                <span class="count-text" data-stop="0" data-speed="1500"></span>Dummy
+                            </h5>
+                            <p class="funfact-one__list__text">Total Farmers</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /.funfact-one -->
 
         <!-- Service Start -->
         <section class="service-three" id="services">
             <div class="service-three__bg" style="background-image: url(assets/images/shapes/service-bg-3-shape.png);">
             </div>
-            <div class="service-three__shape"
-                style="background-image: url(assets/images/riceservice2.png);"></div>
+            <div class="service-three__shape" style="background-image: url(assets/images/riceservice2.png);"></div>
             <div class="container">
                 <div class="sec-title text-center">
 
@@ -742,7 +761,7 @@
                     <!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
                 <div class="service-three__carousel alefox-owl__carousel alefox-owl__carousel--with-shadow alefox-owl__carousel--basic-nav owl-carousel owl-theme"
-    data-owl-options='{
+                    data-owl-options='{
         "items": 1,
         "margin": 30,
         "loop": true,
@@ -768,7 +787,8 @@
                     <div class="item">
                         <div class="service-three__item wow fadeInUp" data-wow-delay="00ms">
                             <div class="service-three__item__image">
-                                <img src="assets/images/MechanisedDirectSeeded.jpeg" alt="alefox" style="height: 278px;">
+                                <img src="assets/images/MechanisedDirectSeeded.jpeg" alt="alefox"
+                                    style="height: 278px;">
                             </div>
                             <div class="service-three__item__content">
                                 <div class="service-three__item__icon">
@@ -862,7 +882,8 @@
                     <div class="item">
                         <div class="service-three__item wow fadeInUp" data-wow-delay="100ms">
                             <div class="service-three__item__image">
-                                <img src="assets/images/Carbon Credit Monetization.jpg" alt="alefox" style="height: 278px;">
+                                <img src="assets/images/Carbon Credit Monetization.jpg" alt="alefox"
+                                    style="height: 278px;">
                             </div>
                             <div class="service-three__item__content">
                                 <div class="service-three__item__icon">
@@ -1001,7 +1022,7 @@
                     <div class="client-carousel__one__item">
                         <img src="assets/images/brand/brand-1-1.png" alt="alefox">
                     </div><!-- /.owl-slide-item-->
-                    <!-- <div class="client-carousel__one__item">
+        <!-- <div class="client-carousel__one__item">
                         <img src="assets/images/brand/brand-1-1.png" alt="alefox">
                     </div>
                     <div class="client-carousel__one__item">
@@ -1157,28 +1178,28 @@
                             </div>
                         </div>
                     </div> -->
-                    
+
                     <!-- /.item -->
-                 <div class="item">
-    <div class="project-two__item">
-        <video autoplay loop muted playsinline class="project-video-fixed">
-            <source src="assets/images/testivid1.mp4" type="video/mp4">
-            <!-- Your browser does not support the video tag. -->
-        </video>
-        
-        <div class="project-two__item__content">
-            <!-- <p class="project-two__item__cats">f</p>  -->
-            
-            <h5 class="project-two__item__title">
-                <a href="#">Transplantation in Main Field</a>
-            </h5>
-            
-            <a href="#" class="project-two__item__rm">
-                <i class="icofont-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-</div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <video autoplay loop muted playsinline class="project-video-fixed">
+                                <source src="assets/images/testivid1.mp4" type="video/mp4">
+                                <!-- Your browser does not support the video tag. -->
+                            </video>
+
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">f</p>  -->
+
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Transplantation in Main Field</a>
+                                </h5>
+
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="item">
                         <div class="project-two__item">
                             <img src="assets/images/Exploreourproject2.jpeg" alt="alefox">
@@ -1203,7 +1224,7 @@
                             </div>
                         </div>
                     </div> -->
-                    
+
                     <!-- /.item -->
                     <!-- <div class="item">
                         <div class="project-two__item">
@@ -1218,26 +1239,41 @@
                         </div>
                     </div> -->
                     <!-- /.item -->
-                      <div class="item">
-    <div class="project-two__item">
-        <video autoplay loop muted playsinline class="project-video-fixed">
-            <source src="assets/images/testivid2.mp4" type="video/mp4">
-           
-        </video>
-        
-        <div class="project-two__item__content">
-            <h5 class="project-two__item__title">
-                <a href="#">Paddy Fields</a>
-            </h5>
-            <a href="#" class="project-two__item__rm">
-                <i class="icofont-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-</div>
                     <div class="item">
                         <div class="project-two__item">
-                            <img src="assets/images/Exploreourproject5.jpeg" alt="alefox" >
+                            <video autoplay loop muted playsinline class="project-video-fixed">
+                                <source src="assets/images/testivid2.mp4" type="video/mp4">
+
+                            </video>
+
+                            <div class="project-two__item__content">
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Paddy Fields</a>
+                                </h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Orientation of Farmers Irrigation Association (FIA) on AWD.jpg"
+                                alt="alefox">
+                            <div class="project-two__item__content">
+                                <!-- <p class="project-two__item__cats">Gardening</p> -->
+                                <h5 class="project-two__item__title"><a href="#">Orientation of Farmers Irrigation
+                                        Association (FIA) on AWD</a></h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="project-two__item">
+                            <img src="assets/images/Exploreourproject5.jpeg" alt="alefox">
                             <div class="project-two__item__content">
                                 <!-- <p class="project-two__item__cats">Gardening</p> -->
                                 <h5 class="project-two__item__title"><a href="#">Rice Field</a></h5>
@@ -1261,23 +1297,23 @@
                             </div>
                         </div>
                     </div> -->
-                      <div class="item">
-    <div class="project-two__item">
-        <video autoplay loop muted playsinline class="project-video-fixed">
-            <source src="assets/images/testivid3.mp4" type="video/mp4">
-           
-        </video>
-        
-        <div class="project-two__item__content">
-            <h5 class="project-two__item__title">
-                <a href="#">Water Level Measurement through AWD Pipe</a>
-            </h5>
-            <a href="#" class="project-two__item__rm">
-                <i class="icofont-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-</div>
+                    <div class="item">
+                        <div class="project-two__item">
+                            <video autoplay loop muted playsinline class="project-video-fixed">
+                                <source src="assets/images/testivid3.mp4" type="video/mp4">
+
+                            </video>
+
+                            <div class="project-two__item__content">
+                                <h5 class="project-two__item__title">
+                                    <a href="#">Water Level Measurement through AWD Pipe</a>
+                                </h5>
+                                <a href="#" class="project-two__item__rm">
+                                    <i class="icofont-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- <div class="item">
                         <div class="project-two__item">
                             <img src="assets/images/Exploreourproject7.jpeg" alt="alefox">
@@ -1292,7 +1328,7 @@
                             </div>
                         </div>
                     </div> -->
-                    
+
 
                     <!-- <div class="item">
                         <div class="project-two__item">
@@ -1309,25 +1345,26 @@
                         </div>
                     </div> -->
 
-                   
 
-                      <div class="item">
+
+                    <div class="item">
                         <div class="project-two__item">
                             <img src="assets/images/Farmer Awareness.jpg" alt="alefox">
                             <div class="project-two__item__content">
-                                <h5 class="project-two__item__title"><a href="#">Farmer Awareness Session</a></h5>
+                                <h5 class="project-two__item__title"><a href="#">Orientation of Farmers on AWD (Barangay
+                                        level)</a></h5>
                                 <a href="#" class="project-two__item__rm">
                                     <i class="icofont-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div><!-- /.container -->
         </section><!-- /.project-two -->
 
-         <section class="testimonials-two" id="testimonials">
+        <section class="testimonials-two" id="testimonials">
             <div class="testimonials-two__bg"
                 style="background-image: url(assets/images/shapes/testimonials-bg-shape-2.png);"></div>
             <div class="container">
@@ -1371,13 +1408,15 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
                                     <img src="assets/images/Capacity Building.jpg" alt="Client Testimonial">
                                 </div>
                             </div>
                         </div>
 
-                       
+
 
                         <div class="item">
                             <div class="testimonials-two__item">
@@ -1386,13 +1425,15 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
                                     <img src="assets/images/Capacity Building1.jpg" alt="Client Testimonial">
                                 </div>
                             </div>
                         </div>
 
-                       
+
 
                         <div class="item">
                             <div class="testimonials-two__item">
@@ -1401,8 +1442,11 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
-                                    <img src="assets/images/Capacity Building2.jpg" alt="Client Testimonial" style="width:100%;">
+                                    <img src="assets/images/Capacity Building2.jpg" alt="Client Testimonial"
+                                        style="width:100%;">
                                 </div>
                             </div>
                         </div>
@@ -1414,6 +1458,8 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
                                     <img src="assets/images/Capacity Building3.jpg" alt="Client Testimonial">
                                 </div>
@@ -1427,6 +1473,8 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
                                     <img src="assets/images/Capacity Building4.jpg" alt="Client Testimonial">
                                 </div>
@@ -1440,6 +1488,8 @@
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i>
                                 </div>
+                                <p style="color:#fff; font-size:larger;">Orientation & Training of Field Officers on AWD
+                                </p>
                                 <div class="testimonial-media-box">
                                     <img src="assets/images/Capacity Building5.jpg" alt="Client Testimonial">
                                 </div>
@@ -1459,7 +1509,7 @@
                             </div>
                         </div> -->
 
-                        
+
 
                     </div>
                 </div>
@@ -1556,116 +1606,127 @@
         </section> -->
         <!-- /.testimonials-two -->
 
-       <section class="staff-profile-section">
-    <div class="staff-profile-container">
-        
-        <div class="staff-profile-header">
-             <h6 class="sec-title__tagline bw-split-in-right">
+        <section class="staff-profile-section">
+            <div class="staff-profile-container">
 
-                <span class="sec-title__tagline__left-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+                <div class="staff-profile-header">
+                    <h6 class="sec-title__tagline bw-split-in-right">
 
-                Our Team People
+                        <span class="sec-title__tagline__left-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>
 
-                <span class="sec-title__tagline__right-leaf" style="background-image: url(assets/images/shapes/leaf.png);"></span>
+                        Our Team People
 
-            </h6>
-            <h3 class="staff-profile-title">Meet The Team Members</h3>
-        </div>
+                        <span class="sec-title__tagline__right-leaf"
+                            style="background-image: url(assets/images/shapes/leaf.png);"></span>
 
-        <div class="staff-profile-grid">
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Dr. Ramises Nudalo Solante.jpg" alt="Ramises Nudalo Solante">
+                    </h6>
+                    <h3 class="staff-profile-title">Meet The Team Members</h3>
                 </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Dr. Ramises Nudalo Solante</h3>
-                    <p class="staff-profile-designation">President</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=solantedodong@gmail.com" target="_blank" class="staff-profile-email">solantedodong@gmail.com </a>
+
+                <div class="staff-profile-grid">
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Dr. Ramises Nudalo Solante.jpg" alt="Ramises Nudalo Solante">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Dr. Ramises Nudalo Solante</h3>
+                            <p class="staff-profile-designation">President</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=solantedodong@gmail.com"
+                                target="_blank" class="staff-profile-email">solantedodong@gmail.com </a>
+                        </div>
+                    </div>
+
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Emelita Pongcol Solante.png" alt="Emelita Pongcol Solante">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Dr. Emelita Pongcol Solante</h3>
+                            <p class="staff-profile-designation">Treasurer</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=solanteemil@gmail.com"
+                                target="_blank" class="staff-profile-email">solanteemil@gmail.com </a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Edgardo Reyes Gallardo.jpg" alt="Dr. Edgardo Reyes Gallardo">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Dr. Edgardo Reyes Gallardo</h3>
+                            <p class="staff-profile-designation">Board Member</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cawayan2022@gmail.com"
+                                target="_blank" class="staff-profile-email">cawayan2022@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Bede P. Ozaraga.png" alt="Dr. Bede P. Ozaraga">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Dr. Bede P. Ozaraga</h3>
+                            <p class="staff-profile-designation">Board Member</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bedeozaraga@gmail.com"
+                                target="_blank" class="staff-profile-email">bedeozaraga@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Francisco Roman R. Figarola.png"
+                                alt="Prof. Francisco Roman R. Figarola">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Prof. Francisco Roman R. Figarola</h3>
+                            <p class="staff-profile-designation">Board Member</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=figarolafrank@gmail.com"
+                                target="_blank" class="staff-profile-email">figarolafrank@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Felizardo F. Gimoto.png" alt="Prof. Felizardo F. Gimoto">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Prof. Felizardo F. Gimoto</h3>
+                            <p class="staff-profile-designation">Board Member</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felizardofebriogimoto27@gmail.com"
+                                target="_blank" class="staff-profile-email">felizardofebriogimoto27@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/saibalmitra.jpeg" alt="Er. Saibal Mitra">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Er. Saibal Mitra</h3>
+                            <p class="staff-profile-designation">Advisor for Financial Control of Project at RRGI
+                                (CEO & COO of KBC India)</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mitrasaibal@hotmail.com"
+                                target="_blank" class="staff-profile-email">mitrasaibal@hotmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="staff-profile-card">
+                        <div class="staff-profile-image">
+                            <img src="assets/images/Ashok Mohanty.jpeg" alt="Ashok Kumar Mohanty">
+                        </div>
+                        <div class="staff-profile-details">
+                            <h3 class="staff-profile-name">Dr. Ashok Kumar Mohanty</h3>
+                            <p class="staff-profile-designation">Technical Advisor (RRGI) </p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=drakmohanty1962@gmail.com"
+                                target="_blank" class="staff-profile-email">drakmohanty1962@gmail.com </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Emelita Pongcol Solante.png" alt="Emelita Pongcol Solante">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Dr. Emelita Pongcol Solante</h3>
-                    <p class="staff-profile-designation">Treasurer</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=solanteemil@gmail.com" target="_blank" class="staff-profile-email">solanteemil@gmail.com </a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Edgardo Reyes Gallardo.jpg" alt="Dr. Edgardo Reyes Gallardo">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Dr. Edgardo Reyes Gallardo</h3>
-                    <p class="staff-profile-designation">Board Member</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cawayan2022@gmail.com" target="_blank" class="staff-profile-email">cawayan2022@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Bede P. Ozaraga.png" alt="Dr. Bede P. Ozaraga">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Dr. Bede P. Ozaraga</h3>
-                    <p class="staff-profile-designation">Board Member</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bedeozaraga@gmail.com" target="_blank" class="staff-profile-email">bedeozaraga@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Francisco Roman R. Figarola.png" alt="Prof. Francisco Roman R. Figarola">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Prof. Francisco Roman R. Figarola</h3>
-                    <p class="staff-profile-designation">Board Member</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=figarolafrank@gmail.com" target="_blank" class="staff-profile-email">figarolafrank@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Felizardo F. Gimoto.png" alt="Prof. Felizardo F. Gimoto">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Prof. Felizardo F. Gimoto</h3>
-                    <p class="staff-profile-designation">Board Member</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felizardofebriogimoto27@gmail.com" target="_blank" class="staff-profile-email">felizardofebriogimoto27@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/saibalmitra.jpeg" alt="Er. Saibal Mitra">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Er. Saibal Mitra</h3>
-                    <p class="staff-profile-designation">Advisor for Financial Control of Project at RRGI
-(CEO & COO of KBC India)</p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mitrasaibal@hotmail.com" target="_blank" class="staff-profile-email">mitrasaibal@hotmail.com</a>
-                </div>
-            </div>
-
-            <div class="staff-profile-card">
-                <div class="staff-profile-image">
-                    <img src="assets/images/Ashok Mohanty.jpeg" alt="Ashok Kumar Mohanty">
-                </div>
-                <div class="staff-profile-details">
-                    <h3 class="staff-profile-name">Dr. Ashok Kumar Mohanty</h3>
-                    <p class="staff-profile-designation">Technical Advisor (RRGI) </p>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=drakmohanty1962@gmail.com" target="_blank" class="staff-profile-email">drakmohanty1962@gmail.com </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section><!-- /.team-one -->
+        </section><!-- /.team-one -->
 
         <section class="product-two d-none">
             <div class="container">
@@ -1925,104 +1986,106 @@
         </section><!-- /.product-two -->
 
         <section class="contact-two" id="Contact">
-    <div class="contact-two__bg" style="background-image: url(assets/images/farmerbasket.png);">
-    </div>
-    <div class="contact-two__shape" style="background-image: url(assets/images/shapes/contact-2-shape-1.png);">
-    </div>
-    <div class="container">
-        <div class="row">
-            
-            <!-- FIXED: Added col-12 and mb-5 mb-md-0 for mobile spacing -->
-            <div class="col-12 col-md-6 col-xl-5 mb-5 mb-md-0">
-                <form class="contact-two__form contact-form-validated form-one wow fadeInUp"
-                    data-wow-duration="1500ms" action="sendemail.php" method="POST">
-                    <div class="sec-title text-center">
-
-                        <h6 class="sec-title__tagline bw-split-in-right"><span
-                                class="sec-title__tagline__left-leaf"
-                                style="background-image: url(assets/images/shapes/leaf.png);"></span>Contact
-                            Us<span class="sec-title__tagline__right-leaf"
-                                style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
-                        <!-- /.sec-title__tagline -->
-
-                        <h3 class="sec-title__title">Get in Touch</h3><!-- /.sec-title__title -->
-                    </div><!-- /.sec-title -->
-                    <div class="form-one__group">
-                        <div class="form-one__control form-one__control--full">
-                            <input type="text" name="name" placeholder="Name">
-                        </div><!-- /.form-one__control form-one__control--full -->
-                        <div class="form-one__control form-one__control--full">
-                            <input type="email" name="email" placeholder="Email">
-                        </div><!-- /.form-one__control form-one__control--full -->
-                        <div class="form-one__control form-one__control--full">
-                            <input type="text" name="address" placeholder="Address">
-                        </div><!-- /.form-one__control form-one__control--full -->
-                        <div class="form-one__control form-one__control--full">
-                            <input type="text" name="phone" placeholder="Phone">
-                        </div><!-- /.form-one__control form-one__control--full -->
-                        <div class="form-one__control form-one__control--full">
-                            <div class="form-one__control__select">
-                                <label class="sr-only" for="service-select">Choose Service</label>
-                                <!-- /#service-select.sr-only -->
-
-                                <select class="selectpicker" name="service" id="service-select">
-                                    <option value="Select service">Choose Service</option>
-                                    <option value="Select service 01">To get more info.</option>
-                                </select>
-                            </div><!-- /.main-menu__service -->
-                        </div><!-- /.form-one__control form-one__control--full -->
-                        <div class="form-one__control form-one__control--full">
-                            <button type="submit" class="alefox-btn">
-                                <span class="alefox-btn__item"></span>
-                                <span class="alefox-btn__item"></span>
-                                <span class="alefox-btn__item"></span>
-                                <span class="alefox-btn__item"></span>
-                                Send Request
-                            </button>
-                        </div><!-- /.form-one__control -->
-                    </div><!-- /.form-one__group -->
-                </form>
+            <div class="contact-two__bg" style="background-image: url(assets/images/farmerbasket.png);">
             </div>
-            
-            <!-- FIXED: Added col-12 here as well to ensure it stacks perfectly -->
-            <div class="col-12 col-md-6 col-xl-7 d-flex align-items-center wow fadeInUp">
-                <ul class="contact-two__list w-100">
-                    <li class="contact-two__item">
-                        <div class="contact-two__item__icon"><span class="icon-phone-call"></span></div>
-                        <div class="contact-two__item__content">
-                            <h3 class="contact-two__item__title">Call This Now</h3>
-                            <p class="contact-two__item__text"><a href="tel:+918479052071">
-                                    +63-9176207621</a></p>
-                        </div>
-                    </li><!-- item -->
-                    <li class="contact-two__item">
-                        <div class="contact-two__item__icon"><span class="icon-email"></span></div>
-                        <div class="contact-two__item__content">
-                            <h3 class="contact-two__item__title">Your Message</h3>
-                            <p class="contact-two__item__text"><a
-                                    href="mailto:mitrasaibal@hotmail.com" style="word-break: break-word;">rrgi5807.philippines@gmail.com</a></p>
-                        </div>
-                    </li><!-- item -->
-                    <li class="contact-two__item">
-                        <div class="contact-two__item__icon">
-                            <a href="https://maps.google.com/?q=CF-95,+Sec+-+I,+Salt+Lake,+Kolkata+-+700064" target="_blank" style="color: inherit; text-decoration: none;">
-                                <span class="icon-location"></span>
-                            </a>
-                        </div>
-                        <div class="contact-two__item__content">
-                            <h3 class="contact-two__item__title">Our Location</h3>
-                            <p class="contact-two__item__text">
-                                <!-- FIXED: Added word-break to prevent mobile overflow -->
-                                <a href="https://maps.google.com/?q=Paradise+Street,+Poblacion+Proper,+Mambusao,+Capiz,+Philippines+5807"
-   target="_blank"
-   style="color: inherit; text-decoration: none; word-break: break-word;">
-    Paradise Street, Poblacion Proper, Mambusao, Capiz, Region VI, Philippines 5807
-</a>
-                            </p>
-                        </div>
-                    </li><!-- item -->
+            <div class="contact-two__shape" style="background-image: url(assets/images/shapes/contact-2-shape-1.png);">
+            </div>
+            <div class="container">
+                <div class="row">
 
-                    <!-- <li class="contact-two__item">
+                    <!-- FIXED: Added col-12 and mb-5 mb-md-0 for mobile spacing -->
+                    <div class="col-12 col-md-6 col-xl-5 mb-5 mb-md-0">
+                        <form class="contact-two__form contact-form-validated form-one wow fadeInUp"
+                            data-wow-duration="1500ms" action="sendemail.php" method="POST">
+                            <div class="sec-title text-center">
+
+                                <h6 class="sec-title__tagline bw-split-in-right"><span
+                                        class="sec-title__tagline__left-leaf"
+                                        style="background-image: url(assets/images/shapes/leaf.png);"></span>Contact
+                                    Us<span class="sec-title__tagline__right-leaf"
+                                        style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                                <!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">Get in Touch</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="form-one__group">
+                                <div class="form-one__control form-one__control--full">
+                                    <input type="text" name="name" placeholder="Name">
+                                </div><!-- /.form-one__control form-one__control--full -->
+                                <div class="form-one__control form-one__control--full">
+                                    <input type="email" name="email" placeholder="Email">
+                                </div><!-- /.form-one__control form-one__control--full -->
+                                <div class="form-one__control form-one__control--full">
+                                    <input type="text" name="address" placeholder="Address">
+                                </div><!-- /.form-one__control form-one__control--full -->
+                                <div class="form-one__control form-one__control--full">
+                                    <input type="text" name="phone" placeholder="Phone">
+                                </div><!-- /.form-one__control form-one__control--full -->
+                                <div class="form-one__control form-one__control--full">
+                                    <div class="form-one__control__select">
+                                        <label class="sr-only" for="service-select">Choose Service</label>
+                                        <!-- /#service-select.sr-only -->
+
+                                        <select class="selectpicker" name="service" id="service-select">
+                                            <option value="Select service">Choose Service</option>
+                                            <option value="Select service 01">To get more info.</option>
+                                        </select>
+                                    </div><!-- /.main-menu__service -->
+                                </div><!-- /.form-one__control form-one__control--full -->
+                                <div class="form-one__control form-one__control--full">
+                                    <button type="submit" class="alefox-btn">
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        <span class="alefox-btn__item"></span>
+                                        Send Request
+                                    </button>
+                                </div><!-- /.form-one__control -->
+                            </div><!-- /.form-one__group -->
+                        </form>
+                    </div>
+
+                    <!-- FIXED: Added col-12 here as well to ensure it stacks perfectly -->
+                    <div class="col-12 col-md-6 col-xl-7 d-flex align-items-center wow fadeInUp">
+                        <ul class="contact-two__list w-100">
+                            <li class="contact-two__item">
+                                <div class="contact-two__item__icon"><span class="icon-phone-call"></span></div>
+                                <div class="contact-two__item__content">
+                                    <h3 class="contact-two__item__title">Call This Now</h3>
+                                    <p class="contact-two__item__text"><a href="tel:+918479052071">
+                                            +63-9176207621</a></p>
+                                </div>
+                            </li><!-- item -->
+                            <li class="contact-two__item">
+                                <div class="contact-two__item__icon"><span class="icon-email"></span></div>
+                                <div class="contact-two__item__content">
+                                    <h3 class="contact-two__item__title">Your Message</h3>
+                                    <p class="contact-two__item__text"><a href="mailto:mitrasaibal@hotmail.com"
+                                            style="word-break: break-word;">rrgi5807.philippines@gmail.com</a></p>
+                                </div>
+                            </li><!-- item -->
+                            <li class="contact-two__item">
+                                <div class="contact-two__item__icon">
+                                    <a href="https://maps.google.com/?q=CF-95,+Sec+-+I,+Salt+Lake,+Kolkata+-+700064"
+                                        target="_blank" style="color: inherit; text-decoration: none;">
+                                        <span class="icon-location"></span>
+                                    </a>
+                                </div>
+                                <div class="contact-two__item__content">
+                                    <h3 class="contact-two__item__title">Our Location</h3>
+                                    <p class="contact-two__item__text">
+                                        <!-- FIXED: Added word-break to prevent mobile overflow -->
+                                        <a href="https://maps.google.com/?q=Paradise+Street,+Poblacion+Proper,+Mambusao,+Capiz,+Philippines+5807"
+                                            target="_blank"
+                                            style="color: inherit; text-decoration: none; word-break: break-word;">
+                                            Paradise Street, Poblacion Proper, Mambusao, Capiz, Region VI, Philippines
+                                            5807
+                                        </a>
+                                    </p>
+                                </div>
+                            </li><!-- item -->
+
+                            <!-- <li class="contact-two__item">
                         <div class="contact-two__item__icon">
                             <a href="https://maps.google.com/?q=Plot+No.+-+1554/3207,+Soubhagya+Nagar,+Lane+-+14+A,+Siripur+-+751003,+Bhubaneshwar,+Odisha" target="_blank" style="color: inherit; text-decoration: none;">
                                 <span class="icon-location"></span>
@@ -2038,12 +2101,12 @@
                             </p>
                         </div>
                     </li> -->
-                </ul>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- <section class="contact-map">
     <div class="google-map__">
@@ -2056,18 +2119,15 @@
     </div>
     </section>/.contact-map -->
 
-    <section class="contact-map">
-    <div class="google-map__">
-       <iframe
-    title="Rice-Rise Global Initiative Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.190026689907!2d122.59260967481505!3d11.430206288761093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33af634b363552a7%3A0x2d757b3090a5aac0!2sParadise%20Street!5e1!3m2!1sen!2sin!4v1781329880045!5m2!1sen!2sin"
-    style="width:100%; height:500px; border:0; filter:none !important; -webkit-filter:none !important;"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-    </div>
-</section>
+        <section class="contact-map">
+            <div class="google-map__">
+                <iframe title="Rice-Rise Global Initiative Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.190026689907!2d122.59260967481505!3d11.430206288761093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33af634b363552a7%3A0x2d757b3090a5aac0!2sParadise%20Street!5e1!3m2!1sen!2sin!4v1781329880045!5m2!1sen!2sin"
+                    style="width:100%; height:500px; border:0; filter:none !important; -webkit-filter:none !important;"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
 
         <section class="blog-one d-none" id="blog">
             <div class="container">
@@ -2239,8 +2299,8 @@
                                 </a> -->
                                 <a href="index.html" class="footer-widget__logo mt-4 a2">
                                     Rice-Rise Global Initiative
-                                </a> 
-                                
+                                </a>
+
                                 <p class="footer-widget__description text-white mt-2" style="margin-top: 10px;">
                                     RRGI is a climate-smart agri-enterprise
                                     empowering farmers with sustainable, tech-driven rice farming solutions.
@@ -2329,8 +2389,9 @@
                         <!-- <p class="main-footer__copyright">
                             &copy; Copyright <span class="dynamic-year"></span> by Alefox HTML Template.
                         </p> -->
-                        <p class="main-footer__copyright">&copy; Copyright 2025 Rice-Rise Global Initiative. All Rights Reserved. Designed &amp; Developed By <a
-                                href="https://startupsahay.com/" target="_blank" class="text-white">Start-up Sahay</a>
+                        <p class="main-footer__copyright">&copy; Copyright 2025 Rice-Rise Global Initiative. All Rights
+                            Reserved. Designed &amp; Developed By <a href="https://startupsahay.com/" target="_blank"
+                                class="text-white">Start-up Sahay</a>
                         </p>
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
