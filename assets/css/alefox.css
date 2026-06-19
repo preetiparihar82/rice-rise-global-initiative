@@ -5159,12 +5159,12 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .testimonials-two {
   position: relative;
-  padding: 120px 0;
+  padding: 50px 0;
   background-color: var(--alefox-black2, #202221);
 }
 @media (max-width: 767px) {
   .testimonials-two {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 .testimonials-two__bg {
@@ -14798,3 +14798,4 @@ body.boxed-wrapper .about-one__shape {
   background-repeat: no-repeat;
   animation: shapeMove 3s linear 0s infinite;
 }
+
